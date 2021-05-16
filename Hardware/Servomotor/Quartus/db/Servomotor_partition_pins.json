@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "servomotor",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Switches[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
