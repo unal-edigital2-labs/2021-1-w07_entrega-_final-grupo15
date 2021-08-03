@@ -75,7 +75,7 @@ Durante la ETAPA 3 se trabajó con dos archivos principalmente, el archivo CSR.h
 
 [LINK a archivo: CSR.h](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/build/nexys4ddr/software/include/generated/csr.h)
 
-[LINK a archivo: MAIN.C](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/Master/firmware/main.c)
+[LINK a archivo: MAIN.C](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/firmware/main.c)
 
 ### ETAPA 4 
 La implementación física final no se realizó, es decir que el robot no cuenta con un chazis que sostenga los perifericos, sin embargo en el video de funcionamiento se puede observar como el robot funciona y cumple los requisitos establecidos. 
