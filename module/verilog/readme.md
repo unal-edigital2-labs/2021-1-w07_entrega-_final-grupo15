@@ -371,3 +371,8 @@ Tambien ha de tenerse en cuenta que los modulos de lectura y escritura funcionan
    - [Prueba bluethoot](https://drive.google.com/file/d/1VBtyN9T0SIN_YiE5R5QapZ4dEZ4rJITJ/view?usp=sharing)
    - [Prueba dfplayer mini1](https://drive.google.com/file/d/1CVGVcrjW7LxUk5K06mhSqP3__PBNpGQt/view?usp=sharing)
    - [Prueba dfplayer mini2](https://drive.google.com/file/d/1naFO3XQtUFVfm5zCH8A6EpbjOqmFQAoW/view?usp=sharing)
+
+
+# BlueThoot
+
+hOLIS oscaR
