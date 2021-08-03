@@ -41,11 +41,28 @@ A continuación se ejemplificará el procesos usando el modulo ultrasonido.py, e
 
 Inicialmente importamos nuestras librerías tanto de MIGEN como de LITEX, las cuales nos permiten realizar el proceso de adaptación del módulo. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/import.PNG)
+~~~
+from migen import *
+from migen.genlib.cdc import MultiReg
+from litex.soc.interconnect.csr import *
+from litex.soc.interconnect.csr_eventmanager import *
+
+~~~
 
 Posteriormente generamos nuestra función que nos permitira definir nuestros pines virtuales y nuestros pines físicos. En un SoC accedemos a las entradas y salidas de los modulos ayudados por registros internos que son accedidos por el procesador mediante un bus de datos (Wishbone). En los parametros de entrada declararemos un self (usado posteriormente para los pines "virtuales"), y definiremos el resto de señales para pines físicos. Por ejemplo en nuestro ultrasonido, las señales que se conectaran con pines físicos son trigger y eco. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/Funci%C3%B3n.PNG)
+~~~
+class Ultrasonido(Module,AutoCSR):
+    def __init__(self, trigger, echo):
+        self.clk = ClockSignal()   
+        self.init = CSRStorage(1)
+        
+        self.trigger = trigger
+        self.echo = echo
+
+        self.tiempo = CSRStatus(16)
+        self.done = CSRStatus(1)
+~~~
 
 Las señales que no aparecen como entradas de la función, son señales internas, por ejemplo:
 
@@ -62,23 +79,80 @@ Son señales que iran o vienen de pines físicos.
 
 Finalmente instanciamos (relacionamos) nuestras señales de salida o entrada de verilog, con las señales definidas en nuestro archivo, para esto instanciamos el nombre de nuestro modulo de verilog.  
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/Funci%C3%B3nf.PNG)
+~~~
+        self.specials +=Instance("ultrasonido",
+            i_clk = self.clk,
+            i_init = self.init.storage,
+            
+            o_trigger = self.trigger,
+
+            i_eco = self.echo,
+            
+            o_tiempo = self.tiempo.status,
+            o_done = self.done.status
+        )
+~~~
 
 ## Integrando nuestros módulos en el SoC
 
 Una vez hemos realizado esto con todos nuestros modulos de verilog, pasamos a hacer uso de los archivos BuildSocProject y Nexys4DDR, en el primero agreparemos nuestros modulos a nuestro SoC y en la segunda definiremos los pines "físicos". A continuacicón se describe el procedimiento para integrar los modulos al SoC, nuevamente con un ejemplo, en este caso más general. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/import1.PNG)
+~~~
+
+
+from migen import *
+from migen.genlib.io import CRG
+from migen.genlib.cdc import MultiReg
+
+import nexys4ddr as tarjeta
+#import c4e6e10 as tarjeta
+
+from litex.soc.integration.soc_core import *
+from litex.soc.integration.builder import *
+from litex.soc.interconnect.csr import *
+
+from litex.soc.cores import gpio
+
+#from module import camara
+from module import pwm
+from module import ultrasonido
+from module import motores
+from module import VGA_Mapa
+from module import UARTA
+from module import UARTB
+~~~
 
 Posteriormente debemos incluir y llamar todos los modulos de verilog. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/Funci%C3%B3n1.PNG)
+~~~
+class BaseSoC(SoCCore):
+	def __init__(self):
+		platform = tarjeta.Platform()
+		
+		## add source verilog
+
+		platform.add_source("module/verilog/radar/clk_div.v" )
+		platform.add_source("module/verilog/radar/counter.v" )
+		platform.add_source("module/verilog/radar/pwm.v" )	
+		platform.add_source("module/verilog/radar/ultrasonido.v" )
+		platform.add_source("module/verilog/motor/motores.v" )
+		platform.add_source("module/verilog/motor/direcciones.v" )
+		platform.add_source("module/verilog/motor/pwm.v" )
+~~~
 
 
 Finalmente definimos los pines de estos, les asignamos un nombre que sea facilmente reconocible por nosotros, una vez asignado el nombre ingresamos al archivo NexysDDR donde se encuentran los pines respectivos de la tarjeta y ahí modificamos el nombre de los pines de manera que coincidan con el nombre declarado en el buildSoCproject. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/Funci%C3%B3nf2.PNG)
+~~~
+		# ultrasonido - buildsoc
+		SoCCore.add_csr(self, "ultrasonido")
+		self.submodules.ultrasonido = ultrasonido.Ultrasonido(platform.request("trigger"), platform.request("echo"))
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/Imag%C3%A9nes/pines.PNG)
+# Ultrasonido - Nexys4ddr
+    ("trigger", 0, Pins("H1"), IOStandard("LVCMOS33")),
+    ("echo", 0, Pins("G1"), IOStandard("LVCMOS33")),
+#---------------    
+
+~~~
 
 Ahora resta únicamente dirigirnos a la ETAPA 3, donde en el main.c definiremos las funciones y el comportamiento del robot y generaremos el firmware, es decir el SoC ya sabrá como proceder, cuando y como interactuar con los modulos. 
