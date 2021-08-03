@@ -53,7 +53,7 @@ ETAPA 4. Implementación física final.
 
 Durante la etapa 1, se realizó el desarrollo de los drivers en Verilog, es decir archivos que permiten el control de los perifericos, en palabra simples estos archivos "hablan el idioma de los perifericos" y les indican de que manera funcionar (funcionamiento básico, no implementación). Adicionalmente se desarrollaron modulos cocmplementarios, divisores de clock, contadores, pwm, etc. 
 
-[DOCUMENTACIÓN ETAPA 1](https://github.com/unal-edigital2/Grupo-5-proyecto/tree/Master/module/verilog)
+[DOCUMENTACIÓN ETAPA 1](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/tree/main/module/verilog)
 
 ### ETAPA 2 
 
@@ -61,9 +61,9 @@ En la etapa 2, se crea el Soc, tambien llamado System on Chip, se usa el procesa
 
 [DOCUMENTACIÓN ETAPA 2](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/tree/main/DocBuildSoc-Nexys4DDR)
 
-[LINK a archivo: Build SoC ProJect ](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/buildSoCproject.py)
+[LINK a archivo: Build SoC ProJect ](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/buildSoCproject.py)
 
-[LINK a archivo: Nexys 4 DDR](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/nexys4ddr.py)
+[LINK a archivo: Nexys 4 DDR](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/nexys4ddr.py)
 
 
 
@@ -73,9 +73,9 @@ Durante la ETAPA 3 se trabajó con dos archivos principalmente, el archivo CSR.h
 
 [DOCUMENTACIÓN ETAPA 3](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/tree/main/firmware)
 
-[LINK a archivo: CSR.h](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/build/nexys4ddr/software/include/generated/csr.h)
+[LINK a archivo: CSR.h](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/build/nexys4ddr/software/include/generated/csr.h)
 
-[LINK a archivo: MAIN.C](https://github.com/unal-edigital2/Grupo-5-proyecto/tree/Master/firmware)
+[LINK a archivo: MAIN.C](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/firmware/main.c)
 
 ### ETAPA 4 
 La implementación física final no se realizó, es decir que el robot no cuenta con un chazis que sostenga los perifericos, sin embargo en el video de funcionamiento se puede observar como el robot funciona y cumple los requisitos establecidos. 
