@@ -15,22 +15,19 @@ Antes de iniciar la construcción se plantearon los mapas de memorpia que se mue
 
 Inicialmente tenemos nuestro mapa general de memoria, donde se muestran todos los espacios. 
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_general.png =400x)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_general.png)
 
 Posteriormente tenemos nuestro mapa de registros de memoria, que nos indica la manera como la memoria general se divide.
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_region_memoria.png =400x)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_region_memoria.png)
 
-Adicionalmente tenemos mapas de memoria generados automáticamente por LITEX. 
+Adicionalmente tenemos mapas de memoria generados automáticamente por LITEX, relacionados con el timer, la uart y el controlador del procesador, se pueden cocnsultar en el siguiente link:
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png =400x)
+[Mapa timer](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png ) 
+[Mapa litex](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png )
+[Mapa cont_procesador](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png)
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png =400x)
-
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png =400x)
-
-
-
+A partir de este punto en cada modulo implementado se adjuntará su respectivo mapa de memoria.
 
 ## MODULOS GENERALES
 
