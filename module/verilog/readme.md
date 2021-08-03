@@ -9,7 +9,7 @@ En esta etapa se desarrollaron los siguientes divers:
 
 ## MAPA DE MEMORÍA
 
-Antes de iniciar la construcción se plantearon los mapas de memorpia que se muestran a continuación y que finalmente se cumplieron.  Para leer los mapas que se muestran a continuación se uso la siguiente nomenclatura: Si el especio esta subrayado se puede acceder para lectura, si no esta subrayado se puede aceeder para lectura y escritur. 
+Antes de iniciar la construcción se plantearon los mapas de memorpia que se muestran a continuación y que finalmente se cumplieron.  Para leer los mapas que se muestran a continuación se uso la siguiente nomenclatura: Si el especio esta subrayado se puede acceder para escitura y lectura, si no esta subrayado se puede acceder para lectura. 
 
 ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_como_leer_los_mapas.png)
 
