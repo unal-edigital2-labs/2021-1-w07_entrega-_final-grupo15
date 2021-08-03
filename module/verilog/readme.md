@@ -11,23 +11,23 @@ En esta etapa se desarrollaron los siguientes divers:
 
 Antes de iniciar la construcción se plantearon los mapas de memorpia que se muestran a continuación y que finalmente se cumplieron.  Para leer los mapas que se muestran a continuación se uso la siguiente nomenclatura: Si el especio esta subrayado se puede acceder para escitura y lectura, si no esta subrayado se puede acceder para lectura. 
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_como_leer_los_mapas.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_como_leer_los_mapas.png =400x  )
 
 Inicialmente tenemos nuestro mapa general de memoria, donde se muestran todos los espacios. 
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_general.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_general.png =400x)
 
 Posteriormente tenemos nuestro mapa de registros de memoria, que nos indica la manera como la memoria general se divide.
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_region_memoria.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_region_memoria.png =400x)
 
 Adicionalmente tenemos mapas de memoria generados automáticamente por LITEX. 
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png =400x)
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png =400x)
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png =400x)
 
 
 
