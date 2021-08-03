@@ -50,7 +50,7 @@ A continuación se evidencia la máquina de estados del ultrasonido, donde se ev
 
 Finalmente recomendamos que se revise el PDF Ultrasonido, donde se presentan los diagramas gráficos que explican la interacción de las señales y registros, adicionalmente se presenta la máquina de esto de manera gráfica. *Se sugiere que descarguen el archivo ya que por el peso es posible que no sea visualizable en GitHub.*
 
-[LINK PDF ultrasonido](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/Documentaci%C3%B3nPDFs/Ultrasonido.pdf)
+[LINK PDF ultrasonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/Ultrasonido.pdf)
 
 Ver video de prueba de funcionamiento:  
 [Video Ultrasonido](https://drive.google.com/file/d/1GypbvJ5c7eHzlJgD_kZBjsvUvxoFxT_j/view?usp=sharing)
@@ -72,13 +72,13 @@ Finalmente se encuentra el modulo Motores.
 
 Para detallar la representación gráfica de la maquina de estados, observar el diagrama de señales  y el funcionamiento de este modulo se reomienda ve el pdf de motores:
 
-[LINK PDF motores](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/Documentaci%C3%B3nPDFs/Motores.pdf)
+[LINK PDF motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/Motores.pdf)
 
 Y el video de prueba de funcionamiento: [Video Motores](https://drive.google.com/file/d/1YKebT5QkzJ59IInPWI5JwHerJdkrAPx3/view?usp=sharing)
 
 # VGA  (Incluye Cámara)
 
-[Documentación PDF VGA](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/Documentaci%C3%B3nPDFs/VGA.pdf)
+[Documentación PDF VGA](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA.pdf)
 
 El VGA es la abreviatura de Matriz de gráficos de vídeo, este nombre es asignado a varias cosas por ejemplo a la resolución de 640 × 480 píxeles y al conector de 15 contactos D subminiatura. Justamente este es el que se usa para el proyecto y el que usado por la Nexys 4DDR, como se muestra a continuación unicamente se usan 5 pines de este conector (RED, GREEN, BLUE, HSYNC, VSYNC). Adicionalmente es importante aclara que se cuenta con un archivo llamado clk24_25_nexys4.v  ya que tanto la Cámara como el VGA operan una frecuencia cuatro veces menor a la frecuencia del clock de la FPGA. 
 
@@ -95,19 +95,19 @@ En nuestro caso el Modulo VGA cumple diferentes funciones relacionadas con el pr
 
 Así si tenemos un circulo rojo, la mitad superior de la pantalla tomara el color verde, mientras que la mitad inferior tomará el color rojo.
 
-[LINK código comentado VGA_driver](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/VGA100/VGA_driver.v)
+[LINK código comentado VGA_driver](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/VGA100/VGA_driver.v)
 
 *ImBuffer*: Es una memoría donde se almacenan los datos de la camara, esta memoría es bastante grande  ya que debe almacenar la imagen proporcionada por la camara.
 
-[LINK código ImBuffer](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/VGA100/ImBuffer.v)
+[LINK código ImBuffer](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/VGA100/ImBuffer.v)
 
 *IMBufferv2*: Esta memoria es mucho más pequeña que la anterior, cumple la función de guardar la información del mapa, la información de color y el mapa en si mismo. 
 
-[LINK código comentado ImBufferv2](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/VGA100/ImBufferv2.v)
+[LINK código comentado ImBufferv2](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/VGA100/ImBufferv2.v)
 
 *OVO7670*: En este modulo se adquiere la información de la camara, se lee la información que le llega  y almacena la información en ImBuffer, también realiza el procesamiento de imagen, en este último realizaremos enfásis a continuación. En pocas palabras el driver de la camara, en terminologías de los modulos aportados por el profesor este sería el cam_test.V. 
 
-[LINK código comentado OVO7670](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/VGA100/OV7670.v)
+[LINK código comentado OVO7670](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/VGA100/OV7670.v)
 
 Para el análisis de imagen se debe tener en cuenta que analizamos color y forma. El código comentado se encuentra en el link de arriba, sin embargo a continuación se explica el proceso general de funcionamiento. 
 
@@ -145,7 +145,7 @@ El UART es un protocolo serial que permite la interacción entre dos dispositivo
 
 Tambien ha de tenerse en cuenta que los modulos de lectura y escritura funcionan de manera independiente, de manera que para iniciar la transmision de datos se debe utilizar una señal INIT la cual se encargara de generar el protocolo a traves de RX con los datos cargados en TXData, una vez que se acabe el protocolo se cuenta con una señal TXDone que nos indica cuando este proceso ha finalizado y esta no se desactiva hasta que el INIT vuelva a 0, evitando el envio de multiples datos repetidos. Para el caso de la recepcion de datos se cuenta con la condicion RXAvailable que nos indica si ha llegado un dato (Cuando se esta recibiendo es 0) y este es valido por lo cual podemos leer lo que esta en RXData siendo este el mensaje que acaba de llegar. Este modulo se puede implementar con interrupciones debido a que el envio de multiples datos se puede hacer simplemente cada vez TXDone tiene un flanco de subida de 0 a 1, por lo cual esta sera nuestra señal de interrupcion en su implementacion en el software. en el caso de la recepcion de datos se aplica la misma condicion, cuando RXAvailable cambia de 0 a 1 indica que el dato que se estaba recibiendo ya es valido para su lectura por lo cual esta sera nuestra condicion de interrupcion en una etapa futura de la implementacion junto al SoC.
 
-[Documentación PDF UART](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/Documentaci%C3%B3nPDFs/Uart.pdf)
+[Documentación PDF UART](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/Uart.pdf)
 
    - [Prueba bluethoot](https://drive.google.com/file/d/1VBtyN9T0SIN_YiE5R5QapZ4dEZ4rJITJ/view?usp=sharing)
    - [Prueba dfplayer mini1](https://drive.google.com/file/d/1CVGVcrjW7LxUk5K06mhSqP3__PBNpGQt/view?usp=sharing)
