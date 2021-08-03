@@ -411,6 +411,9 @@ Tambien ha de tenerse en cuenta que los modulos de lectura y escritura funcionan
    - [Prueba dfplayer mini2](https://drive.google.com/file/d/1naFO3XQtUFVfm5zCH8A6EpbjOqmFQAoW/view?usp=sharing)
 
 
-# BlueThoot
+# Bluethoot y Dfplayer (HOLA OESCAR)
 
-hOLIS oscaR
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_bluetooth.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_dfplayer.png)
+
