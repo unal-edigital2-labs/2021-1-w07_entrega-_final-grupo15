@@ -59,7 +59,7 @@ Durante la etapa 1, se realizó el desarrollo de los drivers en Verilog, es deci
 
 En la etapa 2, se crea el Soc, tambien llamado System on Chip, se usa el procesador AMD, el cual interactuará con los registro y los modulos que se desarrollaron en la ETAPA 1 en verilog. La construcción del SoC se realizo haciendo uso de Litex y Migen herramientas que nos permiten usar y unir los archivos/modulos de verilog en un procesador que tenga acceso a todos, sin embargo para esto es necesario "traducirlos" a lenguaje python (usado por litex). Una vez realizado esto nuestro SoC tendra integrados todos los modulos anteriormente generados en verilog y podra acceder a estos, sin embargo no irá más allá de eso. Para que nuestro software pueda realizar alguna acción relacionada con los modulos es necesario que definamos el funcionamiento y las acciones que se realizaran, todo esto es el software del proyecto el cual se trabajó en la ETAPA 3. 
 
-[DOCUMENTACIÓN ETAPA 2](https://github.com/unal-edigital2/Grupo-5-proyecto/tree/Master/DocBuildSoc-Nexys4DDR)
+[DOCUMENTACIÓN ETAPA 2](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/tree/main/DocBuildSoc-Nexys4DDR)
 
 [LINK a archivo: Build SoC ProJect ](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/buildSoCproject.py)
 
