@@ -296,7 +296,7 @@ endmodule
 
 A cada bit de cada motor le será asignado un 1 o un 0 dependiendo de la entrada de 3 bits (movimiento). A continuación se muestra la tabla que indica la dirección del giro o desplazamiento del robot dependiendo "movimiento".
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/TablaMov.PNG)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/TablaMov.PNG)
 
 Finalmente se encuentra el modulo Motores.
 
