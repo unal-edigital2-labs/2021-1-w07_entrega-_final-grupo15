@@ -270,9 +270,12 @@ Ver video de prueba de funcionamiento:
 [Video Ultrasonido](https://drive.google.com/file/d/1GypbvJ5c7eHzlJgD_kZBjsvUvxoFxT_j/view?usp=sharing)
 
 # Motores
-En este modulo se describe el comportamiento de los motores que van a ser la base para la movilidad del robot. Adicional al PWM que ya se ha explicado anteriormente se encuentra un modulo direcciónes y el modulo motor. EL primero es el modulo direcciones que se muestra a continuación.
+En este modulo se describe el comportamiento de los motores que van a ser la base para la movilidad del robot. Adicional al PWM que ya se ha explicado anteriormente se encuentra un modulo direcciónes y el modulo motor. El mapa de memoria consta de una sola dirección
 
-En este modulo tenemos una entrada de 3 bits llamada movimiento, la cual le informa a los motores si moverse o no, adicionalmente tenemos dos salida de dos bits, una para cada motor (A y B), las cuales dependeran directamente de la entrada. 
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_motores.png)
+
+
+EL primero es el modulo direcciones que se muestra a continuación, en este modulo tenemos una entrada de 3 bits llamada movimiento, la cual le informa a los motores si moverse o no, adicionalmente tenemos dos salida de dos bits, una para cada motor (A y B), las cuales dependeran directamente de la entrada. 
 ~~~
 module Direcciones(
 	input [2:0] Movimiento,
@@ -332,7 +335,11 @@ El VGA es la abreviatura de Matriz de gráficos de vídeo, este nombre es asigna
 ![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/VGAn.png)
 
 
-En nuestro caso el Modulo VGA cumple diferentes funciones relacionadas con el protocolo que lleva el mismo nombre y más especificamente con la cámara. A continuación se describe la función de cada uno de los modulos, sin embargo se sugiere que para un mejor entendimiento se remitan a los códigos encontrados en esta sección. 
+En nuestro caso el Modulo VGA cumple diferentes funciones relacionadas con el protocolo que lleva el mismo nombre y más especificamente con la cámara. A continuación se describe la función de cada uno de los modulos, sin embargo se sugiere que para un mejor entendimiento se remitan a los códigos encontrados en esta sección, pero antes de continuar con el código se evidencian los mapas de memoria relacionados con la camara (forma y color) y con la vga.
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_camara.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_vga.png)
 
 *CamaraVGA_ driver*: Es el encargado de generar el protocolo VGA para enviarlo a los pines Href_n, Hsinc_n (Href y Hsin negadas), Xpos, Ypos (posición de barrido en la pantalla). Toma como ingreso un pixel de entrada que contiene la información del color en formato RGB 444, adicionalamente indica donde graficar la información de color y forma, para efectos prácticos se decidió mostrar esta información como fondo de pantalla (detrás del mapa), la mitad inferior de la pantalla tomará el color del color de la figura y la parte de arriba dependiendo de la figura tomará un color especifico:
 
@@ -380,7 +387,12 @@ Para el anális de forma se realizó un proceso que involucra los mismo registro
 
 # UART
 
-El UART es un protocolo serial que permite la interacción entre dos dispositivos, como su nombre lo indica universal asynchronous receiver / transmitter es un protocolo de comunicacion basico en el cual el transmisor y el receptor se deben poner de acuerdo con la velocidad con la que recibiran los datos, ademas de que se cuenta con un canal dedicado para transmision y otro independiente dedicado para la recepcion por lo cual se puede usar en paralalelo (Aunque existe la posibilidad de utilizar un unico canal a traves de Tri-State). En este caso nos va a ayudar a transmitir información entre el procesador y algunos periféricos especificos, el modulo uart esta conformado por los siguientes submodulos. 
+El UART es un protocolo serial que permite la interacción entre dos dispositivos, como su nombre lo indica universal asynchronous receiver / transmitter es un protocolo de comunicacion basico en el cual el transmisor y el receptor se deben poner de acuerdo con la velocidad con la que recibiran los datos, ademas de que se cuenta con un canal dedicado para transmision y otro independiente dedicado para la recepcion por lo cual se puede usar en paralalelo (Aunque existe la posibilidad de utilizar un unico canal a traves de Tri-State). Antes de realizar una descripción de los archivos que se encuentran en este modulo se muestra el mapa de memoria.
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_ultra.png)
+
+
+En este caso nos va a ayudar a transmitir información entre el procesador y algunos periféricos especificos, el modulo uart esta conformado por los siguientes submodulos. 
 
 *Generador de baudios*: Indica a que velocidad se va a dar la transmisión de datos y envia esta señal de reloj a los demas perisfericos.
 
