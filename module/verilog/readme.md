@@ -21,7 +21,36 @@ Para implementar este módulo es necesario hacer uso de un divisor de clock y de
 
 Código divisor de clock: En el código se explica detalladamente la función de cada registro y del proceso que se siguió. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Divclock.PNG)
+~~~
+module clk_div  #(parameter MAX_COUNT=50_000)
+( 
+  input clk,
+  output reg clk_out
+);
+
+wire [15:0] count;
+reg counter_reset;
+
+initial begin
+	clk_out<=0;
+	counter_reset<=1;
+end
+
+always@(posedge clk)
+  begin 
+    counter_reset<=0;
+    if(count==MAX_COUNT)
+    begin
+    	clk_out<=!clk_out;
+    	counter_reset<=1;
+    end
+  end  
+
+  counter counter1(.clk(clk), .count(count), .reset(counter_reset));
+   
+
+endmodule
+  ~~~
 
 Código contador: En el código se explica detalladamente la función de cada registro y del proceso que se siguió.
 
