@@ -71,7 +71,7 @@ En la etapa 2, se crea el Soc, tambien llamado System on Chip, se usa el procesa
 
 Durante la ETAPA 3 se trabajó con dos archivos principalmente, el archivo CSR.h y el main.c, en el primero se encuentran algunas funciones generadas automaticamente al compilar el SoC, estas funciones nos permiten escribir o leer los registros indicados dependiendo el modulo, en el segundo se generan funciones que determinan el funcionamiento del modulo. A continuación los links que conducen a la explicación respectiva del trabajo en cada uno.
 
-[DOCUMENTACIÓN ETAPA 3](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/build/nexys4ddr/software/include/generated/csr.h)
+[DOCUMENTACIÓN ETAPA 3](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/tree/main/firmware)
 
 [LINK a archivo: CSR.h](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/build/nexys4ddr/software/include/generated/csr.h)
 
