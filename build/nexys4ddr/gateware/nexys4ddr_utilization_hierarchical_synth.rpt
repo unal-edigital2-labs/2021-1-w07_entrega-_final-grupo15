@@ -1,0 +1,67 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Aug  2 19:43:08 2021
+| Host         : sergio-X441UVK running 64-bit Ubuntu 20.04.2 LTS
+| Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_synth.rpt
+| Design       : nexys4ddr
+| Device       : 7a100tcsg324-1
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+|        Instance       |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+| nexys4ddr             |              (top) |       3099 |       2989 |     110 |    0 | 2219 |     26 |      0 |          2 |
+|   (nexys4ddr)         |              (top) |        206 |        190 |      16 |    0 |  660 |     14 |      0 |          0 |
+|   CamaraVGADriver     |    CamaraVGADriver |        459 |        453 |       6 |    0 |  196 |     12 |      0 |          2 |
+|     (CamaraVGADriver) |    CamaraVGADriver |          0 |          0 |       0 |    0 |    6 |      0 |      0 |          2 |
+|     Cam               |             OV7670 |        325 |        325 |       0 |    0 |  167 |      0 |      0 |          0 |
+|     Camara            |           ImBuffer |          1 |          1 |       0 |    0 |    0 |     12 |      0 |          0 |
+|     Mapa              |         ImBufferv2 |         14 |          8 |       6 |    0 |    4 |      0 |      0 |          0 |
+|     VGA               |  VGA_Driver640x480 |        119 |        119 |       0 |    0 |   19 |      0 |      0 |          0 |
+|     clk25_24          |    clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   Uart                |               Uart |         37 |         37 |       0 |    0 |   50 |      0 |      0 |          0 |
+|     Baud              | GeneradorBaudios_9 |          9 |          9 |       0 |    0 |   17 |      0 |      0 |          0 |
+|     Receive           |          UartRx_10 |         13 |         13 |       0 |    0 |   16 |      0 |      0 |          0 |
+|     Transmission      |          UartTx_11 |         15 |         15 |       0 |    0 |   17 |      0 |      0 |          0 |
+|   Uart_1              |             Uart_0 |         37 |         37 |       0 |    0 |   50 |      0 |      0 |          0 |
+|     Baud              |   GeneradorBaudios |          9 |          9 |       0 |    0 |   17 |      0 |      0 |          0 |
+|     Receive           |             UartRx |         13 |         13 |       0 |    0 |   16 |      0 |      0 |          0 |
+|     Transmission      |             UartTx |         15 |         15 |       0 |    0 |   17 |      0 |      0 |          0 |
+|   motores             |            motores |         21 |         21 |       0 |    0 |   18 |      0 |      0 |          0 |
+|     First             |                PWM |         21 |         21 |       0 |    0 |   18 |      0 |      0 |          0 |
+|   picorv32            |           picorv32 |       2289 |       2201 |      88 |    0 | 1130 |      0 |      0 |          0 |
+|     (picorv32)        |           picorv32 |       1600 |       1512 |      88 |    0 |  675 |      0 |      0 |          0 |
+|     pcpi_div          |  picorv32_pcpi_div |        448 |        448 |       0 |    0 |  200 |      0 |      0 |          0 |
+|     pcpi_mul          |  picorv32_pcpi_mul |        241 |        241 |       0 |    0 |  255 |      0 |      0 |          0 |
+|   pwm                 |                pwm |         26 |         26 |       0 |    0 |   38 |      0 |      0 |          0 |
+|     (pwm)             |                pwm |          3 |          3 |       0 |    0 |    4 |      0 |      0 |          0 |
+|     clk1_1M           |          clk_div_6 |          5 |          5 |       0 |    0 |   18 |      0 |      0 |          0 |
+|       (clk1_1M)       |          clk_div_6 |          0 |          0 |       0 |    0 |    2 |      0 |      0 |          0 |
+|       counter1        |          counter_8 |          5 |          5 |       0 |    0 |   16 |      0 |      0 |          0 |
+|     counter1          |          counter_7 |         18 |         18 |       0 |    0 |   16 |      0 |      0 |          0 |
+|   ultrasonido         |        ultrasonido |         24 |         24 |       0 |    0 |   77 |      0 |      0 |          0 |
+|     (ultrasonido)     |        ultrasonido |          3 |          3 |       0 |    0 |    5 |      0 |      0 |          0 |
+|     clk1_1M           |            clk_div |          5 |          5 |       0 |    0 |   18 |      0 |      0 |          0 |
+|       (clk1_1M)       |            clk_div |          0 |          0 |       0 |    0 |    2 |      0 |      0 |          0 |
+|       counter1        |          counter_5 |          5 |          5 |       0 |    0 |   16 |      0 |      0 |          0 |
+|     counter1          |            counter |          1 |          1 |       0 |    0 |   16 |      0 |      0 |          0 |
+|     trigger1          |              pwm_1 |         15 |         15 |       0 |    0 |   38 |      0 |      0 |          0 |
+|       (trigger1)      |              pwm_1 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |          0 |
+|       clk1_1M         |          clk_div_2 |          5 |          5 |       0 |    0 |   18 |      0 |      0 |          0 |
+|         (clk1_1M)     |          clk_div_2 |          0 |          0 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         counter1      |          counter_4 |          5 |          5 |       0 |    0 |   16 |      0 |      0 |          0 |
+|       counter1        |          counter_3 |          7 |          7 |       0 |    0 |   16 |      0 |      0 |          0 |
++-----------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

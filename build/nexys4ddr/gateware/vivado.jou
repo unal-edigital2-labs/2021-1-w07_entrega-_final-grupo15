@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug  2 19:41:32 2021
+# Process ID: 87772
+# Current directory: /home/sergio/Documents/U/Github_Digital/Final_Project_Digital/Grupo-5-proyecto/build/nexys4ddr/gateware
+# Command line: vivado -mode batch -source nexys4ddr.tcl
+# Log file: /home/sergio/Documents/U/Github_Digital/Final_Project_Digital/Grupo-5-proyecto/build/nexys4ddr/gateware/vivado.log
+# Journal file: /home/sergio/Documents/U/Github_Digital/Final_Project_Digital/Grupo-5-proyecto/build/nexys4ddr/gateware/vivado.jou
+#-----------------------------------------------------------
+source nexys4ddr.tcl
