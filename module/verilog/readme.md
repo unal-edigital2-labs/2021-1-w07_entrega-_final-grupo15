@@ -37,7 +37,7 @@ Los modulos generales son aquellos que se usaron en varios de los Drivers especi
 
 El modulo PWM es una señal conformada por una sucesión de pulsos periodicos que duran en un 1 lógico un cierto tiempo, este tiempo es considerado el ciclo de trabajo. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Ciclotrabajo.jpg)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/Ciclotrabajo.jpg)
 
 Para implementar este módulo es necesario hacer uso de un divisor de clock y de un contador. 
 
@@ -332,7 +332,7 @@ Y el video de prueba de funcionamiento: [Video Motores](https://drive.google.com
 
 El VGA es la abreviatura de Matriz de gráficos de vídeo, este nombre es asignado a varias cosas por ejemplo a la resolución de 640 × 480 píxeles y al conector de 15 contactos D subminiatura. Justamente este es el que se usa para el proyecto y el que usado por la Nexys 4DDR, como se muestra a continuación unicamente se usan 5 pines de este conector (RED, GREEN, BLUE, HSYNC, VSYNC). Adicionalmente es importante aclara que se cuenta con un archivo llamado clk24_25_nexys4.v  ya que tanto la Cámara como el VGA operan una frecuencia cuatro veces menor a la frecuencia del clock de la FPGA. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/VGAn.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/VGAn.png)
 
 
 En nuestro caso el Modulo VGA cumple diferentes funciones relacionadas con el protocolo que lleva el mismo nombre y más especificamente con la cámara. A continuación se describe la función de cada uno de los modulos, sin embargo se sugiere que para un mejor entendimiento se remitan a los códigos encontrados en esta sección, pero antes de continuar con el código se evidencian los mapas de memoria relacionados con la camara (forma y color) y con la vga.
