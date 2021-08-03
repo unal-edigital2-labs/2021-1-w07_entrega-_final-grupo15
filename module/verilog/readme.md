@@ -23,9 +23,9 @@ Posteriormente tenemos nuestro mapa de registros de memoria, que nos indica la m
 
 Adicionalmente tenemos mapas de memoria generados automáticamente por LITEX, relacionados con el timer, la uart y el controlador del procesador, se pueden cocnsultar en el siguiente link:
 
-[Mapa timer](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png ) 
-[Mapa litex](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png )
-[Mapa cont_procesador](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png)
+- [Mapa timer](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png ) 
+- [Mapa litex](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png )
+- [Mapa cont_procesador](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png)
 
 A partir de este punto en cada modulo implementado se adjuntará su respectivo mapa de memoria.
 
@@ -163,6 +163,12 @@ endmodule
 
 
 ## DRIVER RADAR
+
+Para el radar se realizaron dos mapas de memoria uno para el servo y otro para el ultrasonido, como se muestra a continuación. 
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_servo.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_ultra.png)
 
 El primer periférico en el cual se enfocó el grupo fue el radar (servo + ultrasonido), ya que se consideraba uno de los perifericos que nos eran más familiares, para este periférico se desarrolló un PDF donde se explica a grandes rasgos el funcionamiento de este, para complementar este desarrollo se explicará a continuación el código y se evidenciará su funcionamiento en un video .
 
