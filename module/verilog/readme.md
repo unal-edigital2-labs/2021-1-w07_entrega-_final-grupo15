@@ -56,11 +56,28 @@ always@(posedge clk)
 endmodule
   ~~~
 
-Código contador: En el código se explica detalladamente la función de cada registro y del proceso que se siguió.
+### Código contador: 
+En el código se explica detalladamente la función de cada registro y del proceso que se siguió.
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Counter.PNG)
+~~~
+module counter( 
+  input clk, 
+  input reset,
+  output reg [15:0] count
+);
 
-Código PWM: 
+initial  begin
+count = 0; 
+end 
+always@(negedge clk)
+begin 
+    if(reset) count<=16'b0;
+    else count<=count+16'b1;
+end    
+endmodule
+~~~
+
+### Código PWM: 
 
 ~~~
 module pwm( 
@@ -133,12 +150,91 @@ Codigo Ultrasonido
 
 En el codigo ultra sonido, se hace uso de los modulos explicados anteriormente, el contador (por ende el divisor de clock) y el pwm. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Ultraent.PNG)
+~~~
+module ultrasonido( 
+        input clk,  //Entra la señal de cloc
+        input init, //Señal que indica al ultrasonido que mande la señal
+        output trigger,
+        input eco, //
+        output [15:0] tiempo, //para contar hasta 30ms (máx que dura eco)
+        output reg done //Registro que informan en que momento la señal de retorno del ultra sonido se ha recibido. 
+);
+
+wire clk_1M; //Aquí ya entra el clock de 1M?
+
+reg enable_trigger;
+reg tiempo_reset;
+reg  [1:0] state;
+
+reg [15:0] period_trigger; //Para prueba
+reg [15:0] dutty_trigger;  //Para prueba 
+~~~
 
 A continuación se evidencia la máquina de estados del ultrasonido, donde se evidencia el funcionamiento de los 3 estados que se definieron. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/UltrMaq.PNG)
+~~~
+initial begin
+        state<=0;
+        done<=0;
+        period_trigger<=16'd60; //60 micros periodo
+        dutty_trigger<=16'd12; // 12 micros ciclo útil
+end
 
+
+always@(posedge clk_1M) 
+begin 
+ 
+	case(state)
+		0: begin  
+		   tiempo_reset<=1; //No hemos iniciado a contar.
+                   enable_trigger<=0; // Nuestra señal de disparo no se ha enviado
+                   done<=0; // El done se encuentra en 0 ya que la señal de retorno no se ha recibido
+			if(init) // Al dar la señal al ultrasonido de que inicie se pasa al estado 1
+    	             state<=1;		
+		end
+
+		1: begin
+		   tiempo_reset<=1; //Aun no estamos contando, tiempo_resete=1 quiere decir
+			            //que constantemente estamos re iniciando el contador
+                   enable_trigger<=1; //Mandamos nuestra señal de disparo.
+                   done<=0; //Done en 0 ya que no hemos recibido la señal de retorno.		        
+		
+			if(eco)   //Si eco=1 (quiere decir que no se ha detectado la señal de retorno) 
+				 // entonces pasamos al estado 2
+    	             state<=2;
+  		end
+
+		2: begin
+			tiempo_reset<=0; //El conteo inicia ya que se envió la señal de disparo 
+			                 // (debe ir y volver para determinar la distancia)
+                   enable_trigger<=0;  //El triger está en 0 ya que no se envia la señal nuevamente.
+                   done<=0; 
+
+			if(!eco)  //Una vez eco=0 quiere decir que la señal que se envió ha retornado
+    	             state<=3;
+  		end  
+
+        3: begin 
+		           tiempo_reset<=0; //Aún no se detiene el conteo sin embargo done es 1 ya que la señal ya se recibió.
+                   enable_trigger<=0; 	
+                   done<=1;
+                   
+		if (init==0) // Para volver a usar el ultrasonido, se asigna un 0 a la señal de init. 
+                   state<=0;
+        end
+
+
+	endcase
+end 
+
+
+
+clk_div #(50) clk1_1M(.clk(clk),.clk_out(clk_1M)); 
+counter counter1(.clk(clk_1M), .count(tiempo), .reset(tiempo_reset));
+pwm trigger1(.clk(clk) ,  .enable(enable_trigger),  .dutty(dutty_trigger),  .period(period_trigger), .pwm_out(trigger) );
+
+endmodule 
+~~~
 
 Finalmente recomendamos que se revise el PDF Ultrasonido, donde se presentan los diagramas gráficos que explican la interacción de las señales y registros, adicionalmente se presenta la máquina de esto de manera gráfica. *Se sugiere que descarguen el archivo ya que por el peso es posible que no sea visualizable en GitHub.*
 
@@ -151,8 +247,23 @@ Ver video de prueba de funcionamiento:
 En este modulo se describe el comportamiento de los motores que van a ser la base para la movilidad del robot. Adicional al PWM que ya se ha explicado anteriormente se encuentra un modulo direcciónes y el modulo motor. EL primero es el modulo direcciones que se muestra a continuación.
 
 En este modulo tenemos una entrada de 3 bits llamada movimiento, la cual le informa a los motores si moverse o no, adicionalmente tenemos dos salida de dos bits, una para cada motor (A y B), las cuales dependeran directamente de la entrada. 
+~~~
+module Direcciones(
+	input [2:0] Movimiento,
+	output [1:0] MotorA,
+	output [1:0] MotorB
+);
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Direcciones.PNG)
+assign MotorA[1]=(Movimiento[0]&(Movimiento[2]));
+assign MotorA[0]=(Movimiento[0]&(!Movimiento[2]));
+
+assign MotorB[1]=(Movimiento[1]&(Movimiento[2]));
+assign MotorB[0]=(Movimiento[1]&(!Movimiento[2]));
+
+
+endmodule
+~~~
+
 
 A cada bit de cada motor le será asignado un 1 o un 0 dependiendo de la entrada de 3 bits (movimiento). A continuación se muestra la tabla que indica la dirección del giro o desplazamiento del robot dependiendo "movimiento".
 
@@ -160,7 +271,25 @@ A cada bit de cada motor le será asignado un 1 o un 0 dependiendo de la entrada
 
 Finalmente se encuentra el modulo Motores.
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Motores.PNG)
+
+~~~
+module motores(
+	input clk,
+	input rst,
+	input [2:0] movimiento,
+	output pwm1,
+	output pwm2,
+	output [1:0] motorA,
+	output [1:0] motorB
+);
+
+
+PWM First(clk, !rst, 7'd20, pwm1);
+PWM Second(clk, !rst, 7'd20, pwm2);
+Direcciones Dir(movimiento, motorA, motorB);
+
+endmodule 
+~~~
 
 Para detallar la representación gráfica de la maquina de estados, observar el diagrama de señales  y el funcionamiento de este modulo se reomienda ve el pdf de motores:
 
