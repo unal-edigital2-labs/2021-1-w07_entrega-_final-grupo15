@@ -9,6 +9,10 @@
 
 En la etapa dos ya tenemos nuestro modulos de verilog y los hemos probado previamente, de manera que sabemos que estos funcionan por seprarado. En la ETAPA 2 ha llegado el momento de integrarlos todos en un System on Chip, que pueda tener acceso a ellos y permita la grupación en un solos procesador. Inicialmente es necesario que sea descargado LITEX y que el procesador halla sido generado según el paquete de trabajo 5 proporcionado por el profesor, inicialmente puede parecer un poco confuso el procesos, sin embargo esperamos que la información de aquí sea de útilidad. 
 
+A continuación se evidencia el mapa completo del SoC donde se muestran las conexiónes de perifericos, drivers y el bus. 
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/firmware/figuras/SOC-Map.jpg)
+
 
 ### ¿Cómo se realiza esto? 
 
@@ -29,7 +33,6 @@ En este proyecto se desarrollaron los siguientes modulos.
 - motores.py
 - pwm.py
 - ultrasonido.py
-
 
 
 ## Creación de los archivos .py
