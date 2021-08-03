@@ -22,10 +22,9 @@ ETAPA 1. Desarrollo módulos/Driver Verilog
   -  Los drivers que se encontrarán son:
       - Servomotor
       - Ultrasonido
-      - Cámara
       - Motor
       - UART
-      - VGA
+      - VGA (incluye camara)
 
 ETAPA 2. Diseño del procesador en el BuildSoCproject (Trabajo Hardware)
 
