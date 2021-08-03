@@ -21,6 +21,13 @@ Posteriormente tenemos nuestro mapa de registros de memoria, que nos indica la m
 
 ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_region_memoria.png)
 
+Adicionalmente tenemos mapas de memoria generados automáticamente por LITEX. 
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_timer_litex.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_control_procesador.png)
 
 
 
