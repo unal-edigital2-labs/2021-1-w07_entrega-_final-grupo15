@@ -7,6 +7,7 @@ En esta etapa se desarrollaron los siguientes divers:
 - VGA (Incluye camara y procesamiento de imagen)
 - UART
 
+## MAPA DE MEMORÍA
 
 ## MODULOS GENERALES
 
