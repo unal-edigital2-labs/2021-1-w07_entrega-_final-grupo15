@@ -381,7 +381,7 @@ Para el anális de forma se realizó un proceso que involucra los mismo registro
 - Cuadrado 2b'01
 - Triangulo 2b'11
 
-   - ![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Procesamiento%20de%20im%C3%A1gen2.PNG)
+   - ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/AI4.jpg)
 
    - [Video camara y reconocimiento de imágenes](https://drive.google.com/file/d/1A5ViCRr3DoxvzhJ_PKTOhKA2XRoNO36x/view?usp=sharing)
 
