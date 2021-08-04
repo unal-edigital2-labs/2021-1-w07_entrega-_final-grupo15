@@ -367,7 +367,11 @@ Para el análisis de imagen se debe tener en cuenta que analizamos color y forma
 
 Para el color se decidio que se iban a realizar una agrupaciones de 3 pixeles, la agupación será valida si los 3 pixeles son del mismo color, de otra manera no la agrupación no es valida. Las agrupaciones se van a ir sumando en secuencia en la fila (Aumentando el colorprom), una vez la fila a terminado debemos tener la información del ancho de la fila (dado por el número de trio de pixeles validos), en la documentación contamos con ancho para color rojo, azul y verde. Al completar la fila el ancho actual se compara con el ancho medio (máximo, inicia en 0), si el ancho medio es mayor que el ancho actual no se cambia el valor del ancho medio, por el contrario si el ancho medio es menor que el ancho actual el ancho medio tomará el valor del ancho actual. Posteriormente el ancho actual se compara con el ancho anterior, si el ancho actual es mayor que el ancho anterior el ancho incremental aumenta, si no es así, el ancho incremental disminuye. Para finalizar,  los valores de ancho de cada fila se guardan en la varibale ancho anterior, y nuevamente se incia el proceso de determinar los trios de pixeles validos. Esto quiere decir que a cada fila el valor de Ancho se inicializa en 0, el ancho medio y el ancho incremental cambiará (generalmente). A continuación se evidencia el proceso a seguir de manera gráfica. 
 
-![Image text](https://github.com/unal-edigital2/Grupo-5-proyecto/blob/Master/module/verilog/figuras/Procesamiento%20de%20im%C3%A1gen.PNG)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/AI1.png)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/AI2.jpg)
+
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/AI3.jpg)
 
 Al finalizar llegar a la última fila se compararán los promedios de color rojo, azul o verde, y el colorprom que sea mayor será el que nos indique cual es el color predominante en la figura. 
 
