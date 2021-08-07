@@ -415,7 +415,8 @@ Tambien ha de tenerse en cuenta que los modulos de lectura y escritura funcionan
    - [Prueba dfplayer mini2](https://drive.google.com/file/d/1naFO3XQtUFVfm5zCH8A6EpbjOqmFQAoW/view?usp=sharing)
 
 
-# Bluethoot y Dfplayer (HOLA OESCAR)
+# Bluetooth y Dfplayer
+A continuación se muestra el mapa de memoria para los periféricos Bluetooth y Dfplayer. Los registros en ambos casos estan diseñados para operar el protocolo UART.
 
 ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_bluetooth.png)
 
