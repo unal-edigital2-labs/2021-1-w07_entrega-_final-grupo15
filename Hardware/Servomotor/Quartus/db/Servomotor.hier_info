@@ -48,7 +48,7 @@ Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
-servomotor << Servomotor:xD.Out
+servomotor <= Servomotor:xD.Out
 
 
 |Servomotor_Test|Servomotor:xD
@@ -122,5 +122,34 @@ Ciclo[10] => Equal3.IN21
 Ciclo[11] => Equal2.IN0
 Ciclo[11] => Equal3.IN20
 Out <= Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => BaseCounter.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Ticks.OUTPUTSELECT
+Reset => Out.OUTPUTSELECT
 
 

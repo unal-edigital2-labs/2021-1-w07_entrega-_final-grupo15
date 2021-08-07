@@ -15,7 +15,7 @@ always @(posedge Clock)begin
 end
 
 
-Servomotor xD(Clock, 16'd249, ciclo, servomotor);
+Servomotor xD(Clock, 16'd249, ciclo, servomotor,1'b0);
 
 
 

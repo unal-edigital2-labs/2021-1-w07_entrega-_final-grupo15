@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Servomotor
-Sun May 16 10:48:28 2021
+Thu May 20 18:06:19 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -20,6 +20,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  12. Post-Synthesis Netlist Statistics for Top Partition
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 16 10:48:28 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 20 18:06:18 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Servomotor                                  ;
 ; Top-level Entity Name              ; Servomotor_Test                             ;
@@ -162,7 +163,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.1%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -265,6 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Periodo[15..8] ; Input ; Info     ; Stuck at GND ;
 ; Periodo[2..1]  ; Input ; Info     ; Stuck at GND ;
 ; Periodo[0]     ; Input ; Info     ; Stuck at VCC ;
+; Reset          ; Input ; Info     ; Stuck at GND ;
 +----------------+-------+----------+--------------+
 
 
@@ -306,7 +308,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 16 10:48:22 2021
+    Info: Processing started: Thu May 20 18:06:12 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Servomotor -c Servomotor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -317,6 +319,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file servomo
 Info (12127): Elaborating entity "Servomotor_Test" for the top level hierarchy
 Info (12128): Elaborating entity "Servomotor" for hierarchy "Servomotor:xD" File: A:/Github/w07_entrega-_final-grupo15/Hardware/Servomotor/Quartus/Servomotor_Test.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file A:/Github/w07_entrega-_final-grupo15/Hardware/Servomotor/Quartus/output_files/Servomotor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
@@ -324,9 +327,15 @@ Info (21057): Implemented 70 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 65 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Sun May 16 10:48:28 2021
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu May 20 18:06:19 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in A:/Github/w07_entrega-_final-grupo15/Hardware/Servomotor/Quartus/output_files/Servomotor.map.smsg.
 
 
