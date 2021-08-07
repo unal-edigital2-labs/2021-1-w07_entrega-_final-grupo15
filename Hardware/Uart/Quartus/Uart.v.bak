@@ -1,0 +1,24 @@
+module Uart(
+	input Clock,
+	input Reset,
+	input TxInit,
+	input [15:0] Baudios,
+	output Tx,
+	output TxDone
+);
+
+wire ClockBAUD;
+
+
+module UartTx(Clock, ClockBAUD, Reset, TxInit, 8'b10100110, Tx, TxDone);
+
+module GeneradorBaudios( Clock, Reset, Baudios, ClockBAUD);
+
+
+
+
+
+
+
+
+endmodule

@@ -1,0 +1,137 @@
+set_global_assignment -name DEVICE 10CL025YU256I7G
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/CamaraVGADriver.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/DivisorFrecuencia.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/ImBuffer.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/ImBufferv2.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/OV7670.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/VGA/VGA_driver.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/UART/GeneradorBaudios.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/UART/Uart.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/UART/UartRx.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/UART/UartTx.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/SERVO/Servomotor.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/INF/GPIO.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/ULTRASONIDO/ContadorDistanciaFix.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/ULTRASONIDO/DivisorFrecuencia1.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/ULTRASONIDO/GeneradorPulsos.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/ULTRASONIDO/Ultrasonido.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/ULTRASONIDO/UnidadControl.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/MOTORES/Motores.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/MOTORES/Direcciones.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/module/Verilog/MOTORES/PWM.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/install_litex/pythondata-cpu-picorv32/pythondata_cpu_picorv32/verilog/picorv32.v -library work
+set_global_assignment -name SYSTEMVERILOG_FILE /home/oyuky/Grupo-5-proyecto/Software/build/C10LPRefKit/gateware/C10LPRefKit.v -library work
+set_global_assignment -name top_level_entity C10LPRefKit
+set_location_assignment -comment "serial:0.tx" -to serial_tx Pin_P1
+set_instance_assignment -name io_standard -comment "serial:0.tx" "3.3-V LVTTL" -to serial_tx
+set_location_assignment -comment "serial:0.rx" -to serial_rx Pin_R1
+set_instance_assignment -name io_standard -comment "serial:0.rx" "3.3-V LVTTL" -to serial_rx
+set_location_assignment -comment "hyperram:0.clk" -to hyperram_clk Pin_P14
+set_instance_assignment -name io_standard -comment "hyperram:0.clk" "3.3-V LVTTL" -to hyperram_clk
+set_location_assignment -comment "hyperram:0.rst_n" -to hyperram_rst_n Pin_N9
+set_instance_assignment -name io_standard -comment "hyperram:0.rst_n" "3.3-V LVTTL" -to hyperram_rst_n
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[0] Pin_T12
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[0]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[1] Pin_T13
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[1]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[2] Pin_T11
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[2]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[3] Pin_R10
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[3]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[4] Pin_T10
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[4]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[5] Pin_R11
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[5]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[6] Pin_R12
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[6]
+set_location_assignment -comment "hyperram:0.dq" -to hyperram_dq[7] Pin_R13
+set_instance_assignment -name io_standard -comment "hyperram:0.dq" "3.3-V LVTTL" -to hyperram_dq[7]
+set_location_assignment -comment "hyperram:0.cs_n" -to hyperram_cs_n Pin_P9
+set_instance_assignment -name io_standard -comment "hyperram:0.cs_n" "3.3-V LVTTL" -to hyperram_cs_n
+set_location_assignment -comment "hyperram:0.rwds" -to hyperram_rwds Pin_T14
+set_instance_assignment -name io_standard -comment "hyperram:0.rwds" "3.3-V LVTTL" -to hyperram_rwds
+set_location_assignment -comment "Clock:0" -to Clock Pin_E1
+set_instance_assignment -name io_standard -comment "Clock:0" "3.3-V LVTTL" -to Clock
+set_location_assignment -comment "cpu_reset:0" -to cpu_reset Pin_E15
+set_instance_assignment -name io_standard -comment "cpu_reset:0" "3.3-V LVTTL" -to cpu_reset
+set_location_assignment -comment "GPIO:26" -to GPIO26 Pin_R4
+set_instance_assignment -name io_standard -comment "GPIO:26" "3.3-V LVTTL" -to GPIO26
+set_location_assignment -comment "GPIO:27" -to GPIO27 Pin_T4
+set_instance_assignment -name io_standard -comment "GPIO:27" "3.3-V LVTTL" -to GPIO27
+set_location_assignment -comment "GPIO:28" -to GPIO28 Pin_N3
+set_instance_assignment -name io_standard -comment "GPIO:28" "3.3-V LVTTL" -to GPIO28
+set_location_assignment -comment "GPIO:29" -to GPIO29 Pin_P3
+set_instance_assignment -name io_standard -comment "GPIO:29" "3.3-V LVTTL" -to GPIO29
+set_location_assignment -comment "GPIO:30" -to GPIO30 Pin_R3
+set_instance_assignment -name io_standard -comment "GPIO:30" "3.3-V LVTTL" -to GPIO30
+set_location_assignment -comment "GPIO:31" -to GPIO31 Pin_T3
+set_instance_assignment -name io_standard -comment "GPIO:31" "3.3-V LVTTL" -to GPIO31
+set_location_assignment -comment "ArduinoIO:0" -to ArduinoIO0 Pin_B1
+set_instance_assignment -name io_standard -comment "ArduinoIO:0" "3.3-V LVTTL" -to ArduinoIO0
+set_location_assignment -comment "ArduinoIO:1" -to ArduinoIO1 Pin_C2
+set_instance_assignment -name io_standard -comment "ArduinoIO:1" "3.3-V LVTTL" -to ArduinoIO1
+set_location_assignment -comment "PMOD:0" -to PMOD0 Pin_D16
+set_instance_assignment -name io_standard -comment "PMOD:0" "3.3-V LVTTL" -to PMOD0
+set_location_assignment -comment "PMOD:4" -to PMOD4 Pin_C16
+set_instance_assignment -name io_standard -comment "PMOD:4" "3.3-V LVTTL" -to PMOD4
+set_location_assignment -comment "PMOD:1" -to PMOD1 Pin_F13
+set_instance_assignment -name io_standard -comment "PMOD:1" "3.3-V LVTTL" -to PMOD1
+set_location_assignment -comment "PMOD:2" -to PMOD2 Pin_D15
+set_instance_assignment -name io_standard -comment "PMOD:2" "3.3-V LVTTL" -to PMOD2
+set_location_assignment -comment "PMOD:5" -to PMOD5 Pin_F15
+set_instance_assignment -name io_standard -comment "PMOD:5" "3.3-V LVTTL" -to PMOD5
+set_location_assignment -comment "PMOD:6" -to PMOD6 Pin_C15
+set_instance_assignment -name io_standard -comment "PMOD:6" "3.3-V LVTTL" -to PMOD6
+set_location_assignment -comment "GPIO:0" -to GPIO0 Pin_L13
+set_instance_assignment -name io_standard -comment "GPIO:0" "3.3-V LVTTL" -to GPIO0
+set_location_assignment -comment "GPIO:1" -to GPIO1 Pin_L16
+set_instance_assignment -name io_standard -comment "GPIO:1" "3.3-V LVTTL" -to GPIO1
+set_location_assignment -comment "GPIO:2" -to GPIO2 Pin_L15
+set_instance_assignment -name io_standard -comment "GPIO:2" "3.3-V LVTTL" -to GPIO2
+set_location_assignment -comment "GPIO:3" -to GPIO3 Pin_K16
+set_instance_assignment -name io_standard -comment "GPIO:3" "3.3-V LVTTL" -to GPIO3
+set_location_assignment -comment "GPIO:4" -to GPIO4 Pin_P16
+set_instance_assignment -name io_standard -comment "GPIO:4" "3.3-V LVTTL" -to GPIO4
+set_location_assignment -comment "GPIO:5" -to GPIO5 Pin_R16
+set_instance_assignment -name io_standard -comment "GPIO:5" "3.3-V LVTTL" -to GPIO5
+set_location_assignment -comment "GPIO:6" -to GPIO6 Pin_N16
+set_instance_assignment -name io_standard -comment "GPIO:6" "3.3-V LVTTL" -to GPIO6
+set_location_assignment -comment "GPIO:7" -to GPIO7 Pin_N15
+set_instance_assignment -name io_standard -comment "GPIO:7" "3.3-V LVTTL" -to GPIO7
+set_location_assignment -comment "GPIO:8" -to GPIO8 Pin_N14
+set_instance_assignment -name io_standard -comment "GPIO:8" "3.3-V LVTTL" -to GPIO8
+set_location_assignment -comment "GPIO:9" -to GPIO9 Pin_P15
+set_instance_assignment -name io_standard -comment "GPIO:9" "3.3-V LVTTL" -to GPIO9
+set_location_assignment -comment "GPIO:10" -to GPIO10 Pin_N8
+set_instance_assignment -name io_standard -comment "GPIO:10" "3.3-V LVTTL" -to GPIO10
+set_location_assignment -comment "GPIO:11" -to GPIO11 Pin_P8
+set_instance_assignment -name io_standard -comment "GPIO:11" "3.3-V LVTTL" -to GPIO11
+set_location_assignment -comment "GPIO:12" -to GPIO12 Pin_M8
+set_instance_assignment -name io_standard -comment "GPIO:12" "3.3-V LVTTL" -to GPIO12
+set_location_assignment -comment "GPIO:13" -to GPIO13 Pin_L8
+set_instance_assignment -name io_standard -comment "GPIO:13" "3.3-V LVTTL" -to GPIO13
+set_location_assignment -comment "GPIO:17" -to GPIO17 Pin_M7
+set_instance_assignment -name io_standard -comment "GPIO:17" "3.3-V LVTTL" -to GPIO17
+set_location_assignment -comment "GPIO:25" -to GPIO25 Pin_N6
+set_instance_assignment -name io_standard -comment "GPIO:25" "3.3-V LVTTL" -to GPIO25
+set_location_assignment -comment "GPIO:24" -to GPIO24 Pin_N5
+set_instance_assignment -name io_standard -comment "GPIO:24" "3.3-V LVTTL" -to GPIO24
+set_location_assignment -comment "GPIO:23" -to GPIO23 Pin_T5
+set_instance_assignment -name io_standard -comment "GPIO:23" "3.3-V LVTTL" -to GPIO23
+set_location_assignment -comment "GPIO:22" -to GPIO22 Pin_R5
+set_instance_assignment -name io_standard -comment "GPIO:22" "3.3-V LVTTL" -to GPIO22
+set_location_assignment -comment "GPIO:21" -to GPIO21 Pin_M6
+set_instance_assignment -name io_standard -comment "GPIO:21" "3.3-V LVTTL" -to GPIO21
+set_location_assignment -comment "GPIO:20" -to GPIO20 Pin_T2
+set_instance_assignment -name io_standard -comment "GPIO:20" "3.3-V LVTTL" -to GPIO20
+set_location_assignment -comment "GPIO:19" -to GPIO19 Pin_T6
+set_instance_assignment -name io_standard -comment "GPIO:19" "3.3-V LVTTL" -to GPIO19
+set_location_assignment -comment "GPIO:18" -to GPIO18 Pin_R6
+set_instance_assignment -name io_standard -comment "GPIO:18" "3.3-V LVTTL" -to GPIO18
+set_location_assignment -comment "GPIO:14" -to GPIO14 Pin_R7
+set_instance_assignment -name io_standard -comment "GPIO:14" "3.3-V LVTTL" -to GPIO14
+set_location_assignment -comment "GPIO:15" -to GPIO15 Pin_T7
+set_instance_assignment -name io_standard -comment "GPIO:15" "3.3-V LVTTL" -to GPIO15
+set_location_assignment -comment "GPIO:16" -to GPIO16 Pin_L7
+set_instance_assignment -name io_standard -comment "GPIO:16" "3.3-V LVTTL" -to GPIO16
+set_global_assignment -name SDC_FILE C10LPRefKit.sdc

@@ -1,0 +1,293 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "XClock",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamAddr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCamDataOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Forma[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Forma[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PromedioColor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PromedioColor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Hsync",
+					"strict" : false
+				},
+				{
+					"name" : "Vsync",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "PauseCam",
+					"strict" : false
+				},
+				{
+					"name" : "Pclock",
+					"strict" : false
+				},
+				{
+					"name" : "Vsync_cam",
+					"strict" : false
+				},
+				{
+					"name" : "Href",
+					"strict" : false
+				},
+				{
+					"name" : "Data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaWrite",
+					"strict" : false
+				},
+				{
+					"name" : "MapaData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaAddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MapaData[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

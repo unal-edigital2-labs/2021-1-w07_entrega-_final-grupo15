@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Aug  2 21:09:01 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : C10LPRefKit
+Top-level Entity Name : C10LPRefKit
+Family : Cyclone 10 LP
+Total logic elements : 5,355
+    Total combinational functions : 5,037
+    Dedicated logic registers : 2,343
+Total registers : 2343
+Total pins : 56
+Total virtual pins : 0
+Total memory bits : 383,424
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

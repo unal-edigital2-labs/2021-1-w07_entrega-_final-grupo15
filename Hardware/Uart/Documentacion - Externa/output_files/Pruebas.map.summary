@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 24 17:51:12 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Pruebas
+Top-level Entity Name : Pruebas
+Family : Cyclone 10 LP
+Total logic elements : 178
+    Total combinational functions : 160
+    Dedicated logic registers : 128
+Total registers : 128
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

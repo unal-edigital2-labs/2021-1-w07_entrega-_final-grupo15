@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RGB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Hsync",
+					"strict" : false
+				},
+				{
+					"name" : "Vsync",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+module GeneradorBaudios(
+	input Clock,
+	input Reset,
+	input [15:0] Baudios,
+	output reg ClockBAUD=1'b0;
+);
+
+reg [15:0] Contador=1'b0;
+
+always @(posedge Clock) begin
+
+if(reset==1'b1)begin
+	contador=1'b0;
+	ClockBAUD=1'b0;
+end
+else
+	contador=contador+1'b1;
+	
+	if(contador=Baudios)begin
+		contador=1'b0;
+		ClockBAUD=!ClockBAUD
+	end
+end
+
+end
+endmodule

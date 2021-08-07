@@ -1,0 +1,152 @@
+|Ultrasonido
+Clock => Clock.IN4
+Reset => Reset.IN4
+Inicio => Inicio.IN1
+Echo => Echo.IN1
+Done << Done.DB_MAX_OUTPUT_PORT_TYPE
+Trigger << GeneradorPulsos:Pulse.port4
+Distancia[0] << ContadorDistancia:Distance.port6
+Distancia[1] << ContadorDistancia:Distance.port6
+Distancia[2] << ContadorDistancia:Distance.port6
+Distancia[3] << ContadorDistancia:Distance.port6
+Distancia[4] << ContadorDistancia:Distance.port6
+Distancia[5] << ContadorDistancia:Distance.port6
+Distancia[6] << ContadorDistancia:Distance.port6
+Distancia[7] << ContadorDistancia:Distance.port6
+Distancia[8] << ContadorDistancia:Distance.port6
+
+
+|Ultrasonido|DivisorFrecuencia:CLK1M
+Clock => Clock1M~reg0.CLK
+Clock => Contador[0].CLK
+Clock => Contador[1].CLK
+Clock => Contador[2].CLK
+Clock => Contador[3].CLK
+Clock => Contador[4].CLK
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Clock1M.OUTPUTSELECT
+Clock1M <= Clock1M~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ultrasonido|GeneradorPulsos:Pulse
+Clock => VarClock.DATAB
+Clock1M => VarClock.DATAA
+Reset => VarClock.OUTPUTSELECT
+Reset => always0.IN0
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Done.OUTPUTSELECT
+Reset => Trigger.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Done.OUTPUTSELECT
+Enable => Trigger.OUTPUTSELECT
+Enable => always0.IN1
+Trigger <= Trigger~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ultrasonido|ContadorDistancia:Distance
+Clock => Varclock.DATAB
+Clock1M => Varclock.DATAA
+Reset => Varclock.OUTPUTSELECT
+Reset => Done.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Distancia.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Reset => Contador.OUTPUTSELECT
+Clear => Done.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Distancia.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Clear => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Contador.OUTPUTSELECT
+Enable => Done.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Enable => Distancia.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Contador.OUTPUTSELECT
+Echo => Done.OUTPUTSELECT
+Distancia[0] <= Distancia[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[1] <= Distancia[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[2] <= Distancia[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[3] <= Distancia[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[4] <= Distancia[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[5] <= Distancia[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[6] <= Distancia[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[7] <= Distancia[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distancia[8] <= Distancia[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ultrasonido|UnidadControl:Control
+Inicio => Status.OUTPUTSELECT
+Inicio => Status.OUTPUTSELECT
+Inicio => Status.OUTPUTSELECT
+Reset => EnablGenPulsos.OUTPUTSELECT
+Reset => EnableDistancia.OUTPUTSELECT
+Reset => ClearDistancia.OUTPUTSELECT
+Reset => Status.OUTPUTSELECT
+Reset => Status.OUTPUTSELECT
+Reset => Status.OUTPUTSELECT
+Clock => ClearDistancia~reg0.CLK
+Clock => EnableDistancia~reg0.CLK
+Clock => EnablGenPulsos~reg0.CLK
+Clock => Status~4.DATAIN
+DoneGenPulsos => Status.OUTPUTSELECT
+DoneGenPulsos => Status.OUTPUTSELECT
+DoneGenPulsos => Status.OUTPUTSELECT
+DoneDistancia => Status.OUTPUTSELECT
+DoneDistancia => Status.OUTPUTSELECT
+DoneDistancia => Status.OUTPUTSELECT
+EnablGenPulsos <= EnablGenPulsos~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EnableDistancia <= EnableDistancia~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClearDistancia <= ClearDistancia~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

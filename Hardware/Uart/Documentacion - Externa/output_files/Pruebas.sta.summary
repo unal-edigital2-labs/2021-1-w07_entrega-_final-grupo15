@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'Clock'
+Slack : -6.275
+TNS   : -343.942
+
+Type  : Slow 1200mV 100C Model Setup 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -2.309
+TNS   : -71.780
+
+Type  : Slow 1200mV 100C Model Hold 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.314
+TNS   : -2.055
+
+Type  : Slow 1200mV 100C Model Hold 'Clock'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -116.080
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.285
+TNS   : -51.400
+
+Type  : Slow 1200mV -40C Model Setup 'Clock'
+Slack : -5.212
+TNS   : -291.907
+
+Type  : Slow 1200mV -40C Model Setup 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.871
+TNS   : -57.462
+
+Type  : Slow 1200mV -40C Model Hold 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.247
+TNS   : -1.140
+
+Type  : Slow 1200mV -40C Model Hold 'Clock'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -116.080
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.285
+TNS   : -51.400
+
+Type  : Fast 1200mV -40C Model Setup 'Clock'
+Slack : -2.483
+TNS   : -124.564
+
+Type  : Fast 1200mV -40C Model Setup 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.537
+TNS   : -13.549
+
+Type  : Fast 1200mV -40C Model Hold 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Clock'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -97.146
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'TOP:Top|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.000
+TNS   : -40.000
+
+------------------------------------------------------------

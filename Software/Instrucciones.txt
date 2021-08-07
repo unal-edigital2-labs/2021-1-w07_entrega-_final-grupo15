@@ -1,0 +1,25 @@
+
+python3 buildSoCproject.py
+./load.py
+
+cd/firmware
+make clean all
+
+cd ..
+
+ls -l /dev/ttyUSB0
+sudo usermod -a -G dialout $USER
+sudo chmod a+rw /dev/ttyUSB0
+
+
+ls -l /dev/ttyUSB1
+sudo usermod -a -G dialout $USER
+sudo chmod a+rw /dev/ttyUSB1
+
+
+
+ls -l /dev/ttyUSB2
+sudo usermod -a -G dialout $USER
+sudo chmod a+rw /dev/ttyUSB2
+
+

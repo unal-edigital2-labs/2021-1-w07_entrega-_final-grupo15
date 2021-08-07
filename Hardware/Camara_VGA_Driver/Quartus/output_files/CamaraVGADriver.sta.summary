@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'Pclock'
+Slack : -10.368
+TNS   : -1985.610
+
+Type  : Slow 1200mV 100C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -10.078
+TNS   : -577.865
+
+Type  : Slow 1200mV 100C Model Setup 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -5.367
+TNS   : -21.076
+
+Type  : Slow 1200mV 100C Model Setup 'Clock'
+Slack : -5.031
+TNS   : -6.000
+
+Type  : Slow 1200mV 100C Model Hold 'Pclock'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'VGA_Driver640x480:VGA|countX[1]'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Clock'
+Slack : 0.864
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 0.956
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -3.210
+TNS   : -247.017
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.210
+TNS   : -160.275
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -611.042
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -6.995
+
+Type  : Slow 1200mV -40C Model Setup 'Pclock'
+Slack : -8.892
+TNS   : -1697.426
+
+Type  : Slow 1200mV -40C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -8.842
+TNS   : -505.214
+
+Type  : Slow 1200mV -40C Model Setup 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -5.077
+TNS   : -19.794
+
+Type  : Slow 1200mV -40C Model Setup 'Clock'
+Slack : -4.404
+TNS   : -5.224
+
+Type  : Slow 1200mV -40C Model Hold 'Pclock'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'VGA_Driver640x480:VGA|countX[1]'
+Slack : 0.635
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Clock'
+Slack : 0.787
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 0.816
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -3.210
+TNS   : -237.054
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.210
+TNS   : -157.347
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -600.573
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -6.934
+
+Type  : Fast 1200mV -40C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -4.292
+TNS   : -239.142
+
+Type  : Fast 1200mV -40C Model Setup 'Pclock'
+Slack : -4.240
+TNS   : -770.673
+
+Type  : Fast 1200mV -40C Model Setup 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -2.312
+TNS   : -8.282
+
+Type  : Fast 1200mV -40C Model Setup 'Clock'
+Slack : -1.915
+TNS   : -2.093
+
+Type  : Fast 1200mV -40C Model Hold 'VGA_Driver640x480:VGA|countX[1]'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Pclock'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Clock'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -452.527
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'VGA_Driver640x480:VGA|countX[1]'
+Slack : -3.000
+TNS   : -183.972
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.000
+TNS   : -72.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -5.201
+
+------------------------------------------------------------

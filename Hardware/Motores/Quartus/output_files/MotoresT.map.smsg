@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at PWM.v(11): always construct contains both blocking and non-blocking assignments File: A:/Github/Grupo-5-proyecto/Hardware/Motores/Quartus/PWM.v Line: 11

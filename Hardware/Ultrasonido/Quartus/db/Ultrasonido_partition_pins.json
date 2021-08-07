@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "Trigger",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Distancia[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Echo",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Inicio",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

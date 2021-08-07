@@ -1,0 +1,17 @@
+module ContadorDistancia (
+	input Clock,
+	input Clock1M,
+	input Reset,
+	input Clear,
+	input Enable,
+	input Echo,
+	output reg Distancia;
+	output reg Done
+);
+
+
+
+
+
+
+endmodule

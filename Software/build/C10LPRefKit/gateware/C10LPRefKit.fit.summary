@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Aug  2 21:09:15 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : C10LPRefKit
+Top-level Entity Name : C10LPRefKit
+Family : Cyclone 10 LP
+Device : 10CL025YU256I7G
+Timing Models : Final
+Total logic elements : 5,362 / 24,624 ( 22 % )
+    Total combinational functions : 5,037 / 24,624 ( 20 % )
+    Dedicated logic registers : 2,343 / 24,624 ( 10 % )
+Total registers : 2343
+Total pins : 56 / 151 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 383,424 / 608,256 ( 63 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

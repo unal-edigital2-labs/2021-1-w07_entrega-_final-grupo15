@@ -48,7 +48,7 @@ Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
 Switches[2] => ciclo.OUTPUTSELECT
-servomotor <= Servomotor:xD.Out
+servomotor << Servomotor:xD.Out
 
 
 |Servomotor_Test|Servomotor:xD

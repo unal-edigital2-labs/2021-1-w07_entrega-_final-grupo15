@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jul 09 15:45:18 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : MotoresT
+Top-level Entity Name : Motores
+Family : Cyclone 10 LP
+Device : 10CL025YU256I7G
+Timing Models : Final
+Total logic elements : 33 / 24,624 ( < 1 % )
+    Total combinational functions : 33 / 24,624 ( < 1 % )
+    Dedicated logic registers : 18 / 24,624 ( < 1 % )
+Total registers : 18
+Total pins : 11 / 151 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

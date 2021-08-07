@@ -1,0 +1,6 @@
+
+State Machine - |Ultrasonido|UnidadControl:Control|Status
+Name Status.00 Status.Distancia Status.Pulso 
+Status.00 0 0 0 
+Status.Pulso 1 0 1 
+Status.Distancia 1 1 0 

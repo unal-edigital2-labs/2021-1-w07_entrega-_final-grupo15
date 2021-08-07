@@ -1,0 +1,229 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "serial_tx",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_clk",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO27",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO29",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO30",
+					"strict" : false
+				},
+				{
+					"name" : "ArduinoIO1",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD0",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD4",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD1",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD2",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD5",
+					"strict" : false
+				},
+				{
+					"name" : "PMOD6",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO0",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO1",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO2",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO3",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO4",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO5",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO6",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO7",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO8",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO9",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO10",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO11",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO12",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO13",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO17",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_dq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hyperram_rwds",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO31",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "cpu_reset",
+					"strict" : false
+				},
+				{
+					"name" : "ArduinoIO0",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO28",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO26",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO18",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO14",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO15",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO19",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO20",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO21",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO23",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO22",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO25",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO24",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO16",
+					"strict" : false
+				},
+				{
+					"name" : "serial_rx",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Dataout",
+					"strict" : false
+				},
+				{
+					"name" : "Salida",
+					"strict" : false
+				},
+				{
+					"name" : "Datain",
+					"strict" : false
+				},
+				{
+					"name" : "Control",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

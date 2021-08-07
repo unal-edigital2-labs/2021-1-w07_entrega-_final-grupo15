@@ -1,0 +1,6 @@
+
+State Machine - |Test|Timmer:xD|Status
+Name Status.00 Status.PAUSE Status.COUNT 
+Status.00 0 0 0 
+Status.COUNT 1 0 1 
+Status.PAUSE 1 1 0 

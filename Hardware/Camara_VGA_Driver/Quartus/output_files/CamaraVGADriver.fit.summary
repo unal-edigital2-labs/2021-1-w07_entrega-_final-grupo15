@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jul 28 17:51:58 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : CamaraVGADriver
+Top-level Entity Name : CamaraVGADriver
+Family : Cyclone 10 LP
+Device : 10CL025YU256I7G
+Timing Models : Final
+Total logic elements : 924 / 24,624 ( 4 % )
+    Total combinational functions : 919 / 24,624 ( 4 % )
+    Dedicated logic registers : 184 / 24,624 ( < 1 % )
+Total registers : 184
+Total pins : 71 / 151 ( 47 % )
+Total virtual pins : 0
+Total memory bits : 393,472 / 608,256 ( 65 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

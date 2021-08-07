@@ -1,0 +1,10 @@
+module Test(
+	input Clock,
+	input Reset,
+	input Start,
+	input Pause,
+	output Busy
+);
+
+Timmer xD(Clock, Reset, !Start, !Pause, 16'd50_000_000, !Busy);
+endmodule

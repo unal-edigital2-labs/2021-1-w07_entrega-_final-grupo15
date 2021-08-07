@@ -1,0 +1,1175 @@
+Timing Analyzer report for UartT
+Fri Jul 23 20:05:12 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 100C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 100C Model Setup Summary
+  8. Slow 1200mV 100C Model Hold Summary
+  9. Slow 1200mV 100C Model Recovery Summary
+ 10. Slow 1200mV 100C Model Removal Summary
+ 11. Slow 1200mV 100C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 100C Model Setup: 'Clock'
+ 13. Slow 1200mV 100C Model Hold: 'Clock'
+ 14. Slow 1200mV 100C Model Metastability Summary
+ 15. Slow 1200mV -40C Model Fmax Summary
+ 16. Slow 1200mV -40C Model Setup Summary
+ 17. Slow 1200mV -40C Model Hold Summary
+ 18. Slow 1200mV -40C Model Recovery Summary
+ 19. Slow 1200mV -40C Model Removal Summary
+ 20. Slow 1200mV -40C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV -40C Model Setup: 'Clock'
+ 22. Slow 1200mV -40C Model Hold: 'Clock'
+ 23. Slow 1200mV -40C Model Metastability Summary
+ 24. Fast 1200mV -40C Model Setup Summary
+ 25. Fast 1200mV -40C Model Hold Summary
+ 26. Fast 1200mV -40C Model Recovery Summary
+ 27. Fast 1200mV -40C Model Removal Summary
+ 28. Fast 1200mV -40C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV -40C Model Setup: 'Clock'
+ 30. Fast 1200mV -40C Model Hold: 'Clock'
+ 31. Fast 1200mV -40C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv n40c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 100c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv n40c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Timing Analyzer                                     ;
+; Revision Name         ; UartT                                               ;
+; Device Family         ; Cyclone 10 LP                                       ;
+; Device Name           ; 10CL025YU256I7G                                     ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.17        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   1.2%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 100C Model Fmax Summary              ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 135.56 MHz ; 135.56 MHz      ; Clock      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++--------------------------------------+
+; Slow 1200mV 100C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; Clock ; -6.377 ; -366.268            ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1200mV 100C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; Clock ; 0.026 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Slow 1200mV 100C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 100C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Slow 1200mV 100C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; Clock ; -3.000 ; -149.490                          ;
++-------+--------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 100C Model Setup: 'Clock'                                                                    ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; -6.377 ; Counter[40] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.308      ;
+; -6.373 ; Counter[23] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.303      ;
+; -6.321 ; Counter[22] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.251      ;
+; -6.320 ; Counter[21] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.250      ;
+; -6.296 ; Counter[31] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.227      ;
+; -6.259 ; Counter[40] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.190      ;
+; -6.255 ; Counter[23] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.185      ;
+; -6.249 ; Counter[13] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.179      ;
+; -6.217 ; Counter[28] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.148      ;
+; -6.206 ; Counter[29] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.137      ;
+; -6.204 ; Counter[35] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.135      ;
+; -6.203 ; Counter[22] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.133      ;
+; -6.202 ; Counter[21] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.132      ;
+; -6.178 ; Counter[31] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.109      ;
+; -6.168 ; Counter[32] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.099      ;
+; -6.166 ; Counter[15] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.096      ;
+; -6.143 ; Counter[18] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.073      ;
+; -6.142 ; Counter[16] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.072      ;
+; -6.131 ; Counter[13] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.061      ;
+; -6.129 ; Counter[42] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 7.057      ;
+; -6.128 ; Counter[11] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.058      ;
+; -6.125 ; Counter[40] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.056      ;
+; -6.121 ; Counter[23] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.051      ;
+; -6.109 ; Counter[40] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.040      ;
+; -6.105 ; Counter[23] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.035      ;
+; -6.099 ; Counter[28] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.030      ;
+; -6.088 ; Counter[29] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.019      ;
+; -6.087 ; Counter[17] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.017      ;
+; -6.087 ; Counter[48] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.493     ; 6.592      ;
+; -6.086 ; Counter[35] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 7.017      ;
+; -6.078 ; Counter[24] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 7.008      ;
+; -6.069 ; Counter[22] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.999      ;
+; -6.068 ; Counter[21] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.998      ;
+; -6.059 ; Counter[26] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.990      ;
+; -6.053 ; Counter[22] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.983      ;
+; -6.052 ; Counter[21] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.982      ;
+; -6.050 ; Counter[32] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.981      ;
+; -6.048 ; Counter[15] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.978      ;
+; -6.044 ; Counter[31] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.975      ;
+; -6.032 ; Counter[45] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.960      ;
+; -6.029 ; Counter[44] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.957      ;
+; -6.028 ; Counter[31] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.959      ;
+; -6.025 ; Counter[18] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.955      ;
+; -6.024 ; Counter[16] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.954      ;
+; -6.023 ; Counter[27] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.954      ;
+; -6.020 ; Counter[20] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.950      ;
+; -6.014 ; Counter[47] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.942      ;
+; -6.011 ; Counter[42] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.939      ;
+; -6.010 ; Counter[11] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.940      ;
+; -5.999 ; Counter[12] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.069     ; 6.928      ;
+; -5.997 ; Counter[13] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.927      ;
+; -5.991 ; Counter[40] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.922      ;
+; -5.987 ; Counter[23] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.917      ;
+; -5.986 ; Counter[40] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.340      ; 7.324      ;
+; -5.984 ; Counter[1]  ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.912      ;
+; -5.982 ; Counter[23] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.339      ; 7.319      ;
+; -5.981 ; Counter[13] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.911      ;
+; -5.975 ; Counter[40] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.906      ;
+; -5.972 ; Counter[33] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.903      ;
+; -5.972 ; Counter[38] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.903      ;
+; -5.971 ; Counter[23] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.901      ;
+; -5.969 ; Counter[17] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.899      ;
+; -5.969 ; Counter[48] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.493     ; 6.474      ;
+; -5.968 ; Counter[37] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.899      ;
+; -5.965 ; Counter[28] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.896      ;
+; -5.960 ; Counter[24] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.890      ;
+; -5.959 ; Counter[49] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.493     ; 6.464      ;
+; -5.954 ; Counter[29] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.885      ;
+; -5.952 ; Counter[35] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.883      ;
+; -5.950 ; Counter[19] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.880      ;
+; -5.949 ; Counter[28] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.880      ;
+; -5.945 ; Counter[25] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.876      ;
+; -5.945 ; Counter[39] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.876      ;
+; -5.941 ; Counter[26] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.872      ;
+; -5.938 ; Counter[29] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.869      ;
+; -5.936 ; Counter[35] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.867      ;
+; -5.935 ; Counter[22] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.865      ;
+; -5.934 ; Counter[21] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.864      ;
+; -5.931 ; Counter[43] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.859      ;
+; -5.930 ; Counter[22] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.339      ; 7.267      ;
+; -5.929 ; Counter[21] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.339      ; 7.266      ;
+; -5.919 ; Counter[22] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.849      ;
+; -5.918 ; Counter[21] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.848      ;
+; -5.916 ; Counter[32] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.847      ;
+; -5.914 ; Counter[45] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.842      ;
+; -5.914 ; Counter[15] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.844      ;
+; -5.911 ; Counter[44] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.839      ;
+; -5.910 ; Counter[31] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.841      ;
+; -5.909 ; Counter[30] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.840      ;
+; -5.905 ; Counter[31] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.340      ; 7.243      ;
+; -5.905 ; Counter[27] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.836      ;
+; -5.902 ; Counter[20] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.832      ;
+; -5.900 ; Counter[32] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.831      ;
+; -5.898 ; Counter[15] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.828      ;
+; -5.896 ; Counter[47] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.070     ; 6.824      ;
+; -5.894 ; Counter[14] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.824      ;
+; -5.894 ; Counter[31] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.067     ; 6.825      ;
+; -5.891 ; Counter[18] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.821      ;
+; -5.890 ; Counter[16] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.068     ; 6.820      ;
+; -5.881 ; Counter[12] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.069     ; 6.810      ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 100C Model Hold: 'Clock'                                                                                                                                    ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.026 ; TxData[5]                                   ; Uart:Top|UartTx:Transmission|Data[5]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.622      ;
+; 0.098 ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 3.411      ; 3.695      ;
+; 0.101 ; TxInit                                      ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 3.411      ; 3.698      ;
+; 0.244 ; TxData[7]                                   ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 3.413      ; 3.843      ;
+; 0.273 ; TxData[6]                                   ; Uart:Top|UartTx:Transmission|Data[6]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.869      ;
+; 0.283 ; TxData[3]                                   ; Uart:Top|UartTx:Transmission|Data[3]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.879      ;
+; 0.319 ; TxData[1]                                   ; Uart:Top|UartTx:Transmission|Data[1]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.915      ;
+; 0.333 ; TxData[4]                                   ; Uart:Top|UartTx:Transmission|Data[4]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.929      ;
+; 0.347 ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Clock        ; Clock       ; 0.000        ; 3.411      ; 3.944      ;
+; 0.394 ; TxData[0]                                   ; Uart:Top|UartTx:Transmission|Data[0]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 3.990      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; TxInit                                      ; TxInit                                      ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Status.STOP         ; Uart:Top|UartRx:Receive|Status.STOP         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Status.WAIT         ; Uart:Top|UartRx:Receive|Status.WAIT         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|Status.DATA         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Data[7]        ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Status.START        ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; TxData[2]                                   ; Uart:Top|UartTx:Transmission|Data[2]        ; Clock        ; Clock       ; 0.000        ; 3.410      ; 4.014      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Status.START   ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.418 ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.674      ;
+; 0.422 ; Uart:Top|UartTx:Transmission|Sync           ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.678      ;
+; 0.422 ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.678      ;
+; 0.438 ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Clock        ; Clock       ; 0.000        ; 0.050      ; 0.674      ;
+; 0.449 ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.705      ;
+; 0.449 ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 3.411      ; 4.046      ;
+; 0.460 ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 3.411      ; 4.057      ;
+; 0.493 ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.749      ;
+; 0.554 ; Counter[47]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.493      ; 1.233      ;
+; 0.623 ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|RxData[7]           ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.879      ;
+; 0.625 ; Uart:Top|UartRx:Receive|RxData[1]           ; Uart:Top|UartRx:Receive|RxData[0]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.880      ;
+; 0.626 ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Tx             ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.882      ;
+; 0.642 ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.898      ;
+; 0.643 ; Counter[49]                                 ; Counter[49]                                 ; Clock        ; Clock       ; 0.000        ; 0.086      ; 0.915      ;
+; 0.646 ; Counter[48]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.086      ; 0.918      ;
+; 0.653 ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.909      ;
+; 0.654 ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.910      ;
+; 0.654 ; Counter[8]                                  ; Counter[8]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.910      ;
+; 0.655 ; Counter[6]                                  ; Counter[6]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.911      ;
+; 0.655 ; Counter[5]                                  ; Counter[5]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.911      ;
+; 0.655 ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Clock        ; Clock       ; 0.000        ; 0.087      ; 0.928      ;
+; 0.656 ; Counter[41]                                 ; Counter[41]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.912      ;
+; 0.656 ; Counter[3]                                  ; Counter[3]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.912      ;
+; 0.658 ; Counter[47]                                 ; Counter[47]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.914      ;
+; 0.660 ; Uart:Top|UartRx:Receive|RxData[3]           ; Uart:Top|UartRx:Receive|RxData[2]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.915      ;
+; 0.660 ; Counter[2]                                  ; Counter[2]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.916      ;
+; 0.661 ; Uart:Top|UartRx:Receive|RxData[4]           ; Uart:Top|UartRx:Receive|RxData[3]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.916      ;
+; 0.663 ; Uart:Top|UartRx:Receive|RxData[5]           ; Uart:Top|UartRx:Receive|RxData[4]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.918      ;
+; 0.663 ; Uart:Top|UartRx:Receive|RxData[2]           ; Uart:Top|UartRx:Receive|RxData[1]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.918      ;
+; 0.663 ; Counter[50]                                 ; Counter[50]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.919      ;
+; 0.665 ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.921      ;
+; 0.665 ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.921      ;
+; 0.665 ; Uart:Top|UartRx:Receive|RxData[6]           ; Uart:Top|UartRx:Receive|RxData[5]           ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.920      ;
+; 0.668 ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.924      ;
+; 0.671 ; Counter[31]                                 ; Counter[31]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.927      ;
+; 0.671 ; Counter[7]                                  ; Counter[7]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.927      ;
+; 0.671 ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.927      ;
+; 0.672 ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.928      ;
+; 0.672 ; Counter[27]                                 ; Counter[27]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.928      ;
+; 0.672 ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.928      ;
+; 0.672 ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.928      ;
+; 0.672 ; Counter[9]                                  ; Counter[9]                                  ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.927      ;
+; 0.673 ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[29]                                 ; Counter[29]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[30]                                 ; Counter[30]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[28]                                 ; Counter[28]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[24]                                 ; Counter[24]                                 ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.928      ;
+; 0.673 ; Counter[11]                                 ; Counter[11]                                 ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.928      ;
+; 0.673 ; Counter[40]                                 ; Counter[40]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[38]                                 ; Counter[38]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[37]                                 ; Counter[37]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[39]                                 ; Counter[39]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[36]                                 ; Counter[36]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.673 ; Counter[1]                                  ; Counter[1]                                  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.929      ;
+; 0.674 ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.930      ;
+; 0.674 ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.930      ;
+; 0.674 ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.930      ;
+; 0.674 ; Counter[35]                                 ; Counter[35]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.930      ;
+; 0.674 ; Counter[33]                                 ; Counter[33]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.930      ;
+; 0.675 ; Counter[26]                                 ; Counter[26]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.931      ;
+; 0.675 ; Counter[10]                                 ; Counter[10]                                 ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.930      ;
+; 0.676 ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.932      ;
+; 0.677 ; Counter[32]                                 ; Counter[32]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Counter[18]                                 ; Counter[18]                                 ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.932      ;
+; 0.677 ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Counter[16]                                 ; Counter[16]                                 ; Clock        ; Clock       ; 0.000        ; 0.069      ; 0.932      ;
+; 0.677 ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.677 ; Counter[34]                                 ; Counter[34]                                 ; Clock        ; Clock       ; 0.000        ; 0.070      ; 0.933      ;
+; 0.678 ; Counter[47]                                 ; Counter[49]                                 ; Clock        ; Clock       ; 0.000        ; 0.493      ; 1.357      ;
+; 0.682 ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Clock        ; Clock       ; 0.000        ; 0.087      ; 0.955      ;
++-------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Slow 1200mV 100C Model Metastability Summary ;
+------------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV -40C Model Fmax Summary              ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 158.93 MHz ; 158.93 MHz      ; Clock      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Slow 1200mV -40C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; Clock ; -5.292 ; -302.917            ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1200mV -40C Model Hold Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; Clock ; -0.030 ; -0.030             ;
++-------+--------+--------------------+
+
+
+-------------------------------------------
+; Slow 1200mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Slow 1200mV -40C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; Clock ; -3.000 ; -149.490                          ;
++-------+--------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV -40C Model Setup: 'Clock'                                                                    ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; -5.292 ; Counter[40] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.235      ;
+; -5.283 ; Counter[23] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.224      ;
+; -5.197 ; Counter[31] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.140      ;
+; -5.196 ; Counter[21] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.137      ;
+; -5.195 ; Counter[13] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.136      ;
+; -5.183 ; Counter[22] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.124      ;
+; -5.142 ; Counter[40] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.085      ;
+; -5.136 ; Counter[29] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.079      ;
+; -5.132 ; Counter[28] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.075      ;
+; -5.128 ; Counter[35] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.071      ;
+; -5.115 ; Counter[32] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.058      ;
+; -5.099 ; Counter[42] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 6.038      ;
+; -5.081 ; Counter[31] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.024      ;
+; -5.076 ; Counter[16] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.017      ;
+; -5.076 ; Counter[40] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 6.019      ;
+; -5.068 ; Counter[18] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.009      ;
+; -5.068 ; Counter[24] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.009      ;
+; -5.067 ; Counter[48] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.445     ; 5.622      ;
+; -5.067 ; Counter[23] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.008      ;
+; -5.067 ; Counter[23] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.008      ;
+; -5.060 ; Counter[15] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 6.001      ;
+; -5.034 ; Counter[40] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.977      ;
+; -5.032 ; Counter[26] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.975      ;
+; -5.018 ; Counter[44] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.957      ;
+; -5.014 ; Counter[22] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.955      ;
+; -5.012 ; Counter[21] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.953      ;
+; -5.008 ; Counter[45] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.947      ;
+; -5.006 ; Counter[47] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.945      ;
+; -5.003 ; Counter[27] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.946      ;
+; -4.994 ; Counter[28] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.937      ;
+; -4.990 ; Counter[11] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.931      ;
+; -4.989 ; Counter[17] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.930      ;
+; -4.984 ; Counter[29] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.927      ;
+; -4.981 ; Counter[31] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.924      ;
+; -4.980 ; Counter[21] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.921      ;
+; -4.979 ; Counter[13] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.920      ;
+; -4.973 ; Counter[31] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.916      ;
+; -4.970 ; Counter[35] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.913      ;
+; -4.968 ; Counter[40] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.911      ;
+; -4.967 ; Counter[22] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.908      ;
+; -4.965 ; Counter[38] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.908      ;
+; -4.964 ; Counter[33] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.907      ;
+; -4.963 ; Counter[20] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.904      ;
+; -4.961 ; Counter[49] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.445     ; 5.516      ;
+; -4.959 ; Counter[23] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.900      ;
+; -4.959 ; Counter[23] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.900      ;
+; -4.957 ; Counter[37] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.900      ;
+; -4.956 ; Counter[43] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.895      ;
+; -4.955 ; Counter[13] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.896      ;
+; -4.948 ; Counter[39] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.891      ;
+; -4.936 ; Counter[32] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.879      ;
+; -4.932 ; Counter[11] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.873      ;
+; -4.926 ; Counter[40] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.869      ;
+; -4.920 ; Counter[18] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.861      ;
+; -4.920 ; Counter[29] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.863      ;
+; -4.919 ; Counter[16] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.860      ;
+; -4.916 ; Counter[28] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.859      ;
+; -4.912 ; Counter[35] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.855      ;
+; -4.911 ; Counter[42] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.850      ;
+; -4.910 ; Counter[25] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.853      ;
+; -4.906 ; Counter[22] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.847      ;
+; -4.904 ; Counter[21] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.845      ;
+; -4.902 ; Counter[30] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.845      ;
+; -4.899 ; Counter[32] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.842      ;
+; -4.893 ; Counter[19] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.834      ;
+; -4.889 ; Counter[24] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.830      ;
+; -4.886 ; Counter[28] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.829      ;
+; -4.886 ; Counter[48] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.445     ; 5.441      ;
+; -4.883 ; Counter[42] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.822      ;
+; -4.881 ; Counter[40] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.312      ; 6.193      ;
+; -4.880 ; Counter[12] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.060     ; 5.820      ;
+; -4.878 ; Counter[15] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.819      ;
+; -4.876 ; Counter[29] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.819      ;
+; -4.873 ; Counter[31] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.816      ;
+; -4.872 ; Counter[21] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.813      ;
+; -4.871 ; Counter[13] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.812      ;
+; -4.868 ; Counter[14] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.809      ;
+; -4.865 ; Counter[31] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.808      ;
+; -4.863 ; Counter[1]  ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.062     ; 5.801      ;
+; -4.862 ; Counter[35] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.805      ;
+; -4.860 ; Counter[16] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.801      ;
+; -4.860 ; Counter[40] ; Counter[42] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.803      ;
+; -4.859 ; Counter[26] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.802      ;
+; -4.859 ; Counter[22] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.800      ;
+; -4.856 ; Counter[34] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.799      ;
+; -4.856 ; Counter[50] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.795      ;
+; -4.852 ; Counter[18] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.793      ;
+; -4.852 ; Counter[24] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.793      ;
+; -4.851 ; Counter[48] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.445     ; 5.406      ;
+; -4.851 ; Counter[23] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.792      ;
+; -4.851 ; Counter[23] ; Counter[42] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.792      ;
+; -4.847 ; Counter[13] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.788      ;
+; -4.844 ; Counter[15] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.785      ;
+; -4.843 ; Counter[41] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.061     ; 5.782      ;
+; -4.832 ; Counter[17] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.773      ;
+; -4.828 ; Counter[32] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.771      ;
+; -4.825 ; Counter[27] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.768      ;
+; -4.824 ; Counter[11] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.059     ; 5.765      ;
+; -4.820 ; Counter[31] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.312      ; 6.132      ;
+; -4.818 ; Counter[40] ; Counter[41] ; Clock        ; Clock       ; 1.000        ; -0.057     ; 5.761      ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV -40C Model Hold: 'Clock'                                                                                                                                     ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.030 ; TxData[5]                                   ; Uart:Top|UartTx:Transmission|Data[5]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.188      ;
+; 0.034  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.252      ;
+; 0.035  ; TxInit                                      ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.253      ;
+; 0.069  ; TxData[7]                                   ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 3.053      ; 3.290      ;
+; 0.083  ; TxData[6]                                   ; Uart:Top|UartTx:Transmission|Data[6]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.301      ;
+; 0.092  ; TxData[3]                                   ; Uart:Top|UartTx:Transmission|Data[3]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.310      ;
+; 0.155  ; TxData[1]                                   ; Uart:Top|UartTx:Transmission|Data[1]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.373      ;
+; 0.156  ; TxData[4]                                   ; Uart:Top|UartTx:Transmission|Data[4]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.374      ;
+; 0.175  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.393      ;
+; 0.200  ; TxData[0]                                   ; Uart:Top|UartTx:Transmission|Data[0]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.418      ;
+; 0.245  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.463      ;
+; 0.261  ; TxData[2]                                   ; Uart:Top|UartTx:Transmission|Data[2]        ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.479      ;
+; 0.344  ; TxInit                                      ; TxInit                                      ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.574      ;
+; 0.344  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 3.050      ; 3.562      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Data[7]        ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Status.START   ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.345  ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Status.STOP         ; Uart:Top|UartRx:Receive|Status.STOP         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Status.WAIT         ; Uart:Top|UartRx:Receive|Status.WAIT         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|Status.DATA         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Status.START        ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.359  ; Uart:Top|UartTx:Transmission|Sync           ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.588      ;
+; 0.360  ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.588      ;
+; 0.362  ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Clock        ; Clock       ; 0.000        ; 0.044      ; 0.574      ;
+; 0.395  ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.623      ;
+; 0.433  ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.661      ;
+; 0.476  ; Counter[47]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.445      ; 1.089      ;
+; 0.551  ; Uart:Top|UartRx:Receive|RxData[1]           ; Uart:Top|UartRx:Receive|RxData[0]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.779      ;
+; 0.557  ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|RxData[7]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.785      ;
+; 0.559  ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Tx             ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.788      ;
+; 0.566  ; Counter[47]                                 ; Counter[49]                                 ; Clock        ; Clock       ; 0.000        ; 0.445      ; 1.179      ;
+; 0.568  ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.797      ;
+; 0.570  ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.799      ;
+; 0.571  ; Counter[49]                                 ; Counter[49]                                 ; Clock        ; Clock       ; 0.000        ; 0.076      ; 0.815      ;
+; 0.571  ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.800      ;
+; 0.573  ; Counter[48]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.076      ; 0.817      ;
+; 0.580  ; Counter[8]                                  ; Counter[8]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.810      ;
+; 0.580  ; Counter[6]                                  ; Counter[6]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.810      ;
+; 0.580  ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Clock        ; Clock       ; 0.000        ; 0.077      ; 0.825      ;
+; 0.582  ; Counter[5]                                  ; Counter[5]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.812      ;
+; 0.583  ; Counter[47]                                 ; Counter[47]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.812      ;
+; 0.583  ; Counter[41]                                 ; Counter[41]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.812      ;
+; 0.583  ; Counter[3]                                  ; Counter[3]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.813      ;
+; 0.585  ; Counter[2]                                  ; Counter[2]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.815      ;
+; 0.586  ; Uart:Top|UartRx:Receive|RxData[4]           ; Uart:Top|UartRx:Receive|RxData[3]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.814      ;
+; 0.586  ; Uart:Top|UartRx:Receive|RxData[3]           ; Uart:Top|UartRx:Receive|RxData[2]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.814      ;
+; 0.588  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.816      ;
+; 0.589  ; Uart:Top|UartRx:Receive|RxData[2]           ; Uart:Top|UartRx:Receive|RxData[1]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.817      ;
+; 0.590  ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.819      ;
+; 0.590  ; Uart:Top|UartRx:Receive|RxData[5]           ; Uart:Top|UartRx:Receive|RxData[4]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.818      ;
+; 0.590  ; Counter[50]                                 ; Counter[50]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.819      ;
+; 0.591  ; Uart:Top|UartRx:Receive|RxData[6]           ; Uart:Top|UartRx:Receive|RxData[5]           ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.819      ;
+; 0.593  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.060      ; 0.821      ;
+; 0.593  ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.822      ;
+; 0.593  ; Counter[31]                                 ; Counter[31]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.822      ;
+; 0.593  ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.822      ;
+; 0.593  ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.822      ;
+; 0.594  ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.823      ;
+; 0.594  ; Counter[24]                                 ; Counter[24]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.823      ;
+; 0.594  ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.823      ;
+; 0.594  ; Counter[9]                                  ; Counter[9]                                  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.823      ;
+; 0.595  ; Counter[28]                                 ; Counter[28]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.824      ;
+; 0.595  ; Counter[11]                                 ; Counter[11]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.824      ;
+; 0.595  ; Counter[40]                                 ; Counter[40]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.824      ;
+; 0.595  ; Counter[38]                                 ; Counter[38]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.824      ;
+; 0.595  ; Counter[1]                                  ; Counter[1]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.825      ;
+; 0.596  ; Counter[29]                                 ; Counter[29]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.596  ; Counter[30]                                 ; Counter[30]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.596  ; Counter[27]                                 ; Counter[27]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.596  ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.596  ; Counter[36]                                 ; Counter[36]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.596  ; Counter[39]                                 ; Counter[39]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.825      ;
+; 0.597  ; Counter[26]                                 ; Counter[26]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.597  ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.597  ; Counter[10]                                 ; Counter[10]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.597  ; Counter[7]                                  ; Counter[7]                                  ; Clock        ; Clock       ; 0.000        ; 0.062      ; 0.827      ;
+; 0.597  ; Counter[37]                                 ; Counter[37]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.597  ; Counter[35]                                 ; Counter[35]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.597  ; Counter[33]                                 ; Counter[33]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.826      ;
+; 0.598  ; Counter[18]                                 ; Counter[18]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.827      ;
+; 0.598  ; Counter[16]                                 ; Counter[16]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.827      ;
+; 0.598  ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.827      ;
+; 0.598  ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.827      ;
+; 0.599  ; Counter[32]                                 ; Counter[32]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Counter[34]                                 ; Counter[34]                                 ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.828      ;
+; 0.599  ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Clock        ; Clock       ; 0.000        ; 0.077      ; 0.844      ;
+; 0.600  ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Clock        ; Clock       ; 0.000        ; 0.061      ; 0.829      ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Slow 1200mV -40C Model Metastability Summary ;
+------------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------+
+; Fast 1200mV -40C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; Clock ; -2.521 ; -112.263            ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Fast 1200mV -40C Model Hold Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; Clock ; -0.104 ; -0.322             ;
++-------+--------+--------------------+
+
+
+-------------------------------------------
+; Fast 1200mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1200mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Fast 1200mV -40C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; Clock ; -3.000 ; -127.324                          ;
++-------+--------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Fast 1200mV -40C Model Setup: 'Clock'                                                                    ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+; -2.521 ; Counter[40] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.478      ;
+; -2.505 ; Counter[23] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.460      ;
+; -2.481 ; Counter[21] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.436      ;
+; -2.479 ; Counter[22] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.434      ;
+; -2.456 ; Counter[13] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.411      ;
+; -2.453 ; Counter[40] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.410      ;
+; -2.437 ; Counter[23] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.392      ;
+; -2.421 ; Counter[31] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.378      ;
+; -2.417 ; Counter[42] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.371      ;
+; -2.416 ; Counter[15] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.371      ;
+; -2.413 ; Counter[21] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.368      ;
+; -2.411 ; Counter[22] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.366      ;
+; -2.407 ; Counter[48] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.171      ;
+; -2.393 ; Counter[40] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.350      ;
+; -2.392 ; Counter[28] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.349      ;
+; -2.391 ; Counter[35] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.348      ;
+; -2.389 ; Counter[40] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.346      ;
+; -2.388 ; Counter[29] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.345      ;
+; -2.388 ; Counter[13] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.343      ;
+; -2.379 ; Counter[32] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.336      ;
+; -2.377 ; Counter[23] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.332      ;
+; -2.373 ; Counter[23] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.328      ;
+; -2.359 ; Counter[17] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.314      ;
+; -2.355 ; Counter[18] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.310      ;
+; -2.354 ; Counter[24] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.309      ;
+; -2.353 ; Counter[16] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.308      ;
+; -2.353 ; Counter[49] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.117      ;
+; -2.353 ; Counter[21] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.308      ;
+; -2.353 ; Counter[31] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.310      ;
+; -2.351 ; Counter[22] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.306      ;
+; -2.349 ; Counter[42] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.303      ;
+; -2.349 ; Counter[21] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.304      ;
+; -2.348 ; Counter[15] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.303      ;
+; -2.347 ; Counter[22] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.302      ;
+; -2.340 ; Counter[20] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.295      ;
+; -2.340 ; Counter[44] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.294      ;
+; -2.339 ; Counter[48] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.103      ;
+; -2.337 ; Counter[12] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.291      ;
+; -2.336 ; Counter[45] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.290      ;
+; -2.335 ; Counter[43] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.289      ;
+; -2.334 ; Counter[40] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.152      ; 3.474      ;
+; -2.330 ; Counter[11] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.285      ;
+; -2.329 ; Counter[40] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.286      ;
+; -2.328 ; Counter[47] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.282      ;
+; -2.328 ; Counter[13] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.283      ;
+; -2.325 ; Counter[40] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.282      ;
+; -2.324 ; Counter[26] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.281      ;
+; -2.324 ; Counter[28] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.281      ;
+; -2.324 ; Counter[13] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.279      ;
+; -2.323 ; Counter[35] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.280      ;
+; -2.320 ; Counter[29] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.277      ;
+; -2.318 ; Counter[23] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.150      ; 3.456      ;
+; -2.314 ; Counter[27] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.271      ;
+; -2.313 ; Counter[23] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.268      ;
+; -2.311 ; Counter[32] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.268      ;
+; -2.309 ; Counter[25] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.266      ;
+; -2.309 ; Counter[50] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.263      ;
+; -2.309 ; Counter[23] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.264      ;
+; -2.301 ; Counter[19] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.256      ;
+; -2.298 ; Counter[33] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.255      ;
+; -2.294 ; Counter[21] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.150      ; 3.432      ;
+; -2.293 ; Counter[31] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.250      ;
+; -2.292 ; Counter[22] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.150      ; 3.430      ;
+; -2.291 ; Counter[14] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.246      ;
+; -2.291 ; Counter[17] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.246      ;
+; -2.289 ; Counter[42] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.243      ;
+; -2.289 ; Counter[31] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.246      ;
+; -2.289 ; Counter[21] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.244      ;
+; -2.288 ; Counter[15] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.243      ;
+; -2.287 ; Counter[38] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.244      ;
+; -2.287 ; Counter[18] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.242      ;
+; -2.287 ; Counter[22] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.242      ;
+; -2.286 ; Counter[37] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.243      ;
+; -2.286 ; Counter[24] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.241      ;
+; -2.285 ; Counter[16] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.240      ;
+; -2.285 ; Counter[49] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.049      ;
+; -2.285 ; Counter[42] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.239      ;
+; -2.285 ; Counter[21] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.240      ;
+; -2.284 ; Counter[15] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.239      ;
+; -2.283 ; Counter[39] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.240      ;
+; -2.283 ; Counter[22] ; Counter[43] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.238      ;
+; -2.279 ; Counter[48] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.043      ;
+; -2.275 ; Counter[41] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.229      ;
+; -2.275 ; Counter[1]  ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.229      ;
+; -2.275 ; Counter[48] ; Counter[45] ; Clock        ; Clock       ; 1.000        ; -0.224     ; 3.039      ;
+; -2.274 ; Counter[40] ; Counter[48] ; Clock        ; Clock       ; 1.000        ; 0.152      ; 3.414      ;
+; -2.272 ; Counter[20] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.227      ;
+; -2.272 ; Counter[44] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.226      ;
+; -2.269 ; Counter[13] ; Counter[49] ; Clock        ; Clock       ; 1.000        ; 0.150      ; 3.407      ;
+; -2.269 ; Counter[12] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.223      ;
+; -2.268 ; Counter[45] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.222      ;
+; -2.267 ; Counter[43] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.221      ;
+; -2.265 ; Counter[40] ; Counter[42] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.222      ;
+; -2.264 ; Counter[30] ; Counter[50] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.221      ;
+; -2.264 ; Counter[28] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.221      ;
+; -2.264 ; Counter[13] ; Counter[44] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.219      ;
+; -2.263 ; Counter[35] ; Counter[46] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.220      ;
+; -2.262 ; Counter[11] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.033     ; 3.217      ;
+; -2.261 ; Counter[40] ; Counter[41] ; Clock        ; Clock       ; 1.000        ; -0.031     ; 3.218      ;
+; -2.260 ; Counter[47] ; Counter[47] ; Clock        ; Clock       ; 1.000        ; -0.034     ; 3.214      ;
++--------+-------------+-------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV -40C Model Hold: 'Clock'                                                                                                                                     ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                   ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.104 ; TxData[5]                                   ; Uart:Top|UartTx:Transmission|Data[5]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.665      ;
+; -0.073 ; TxInit                                      ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 1.686      ; 1.695      ;
+; -0.050 ; TxData[6]                                   ; Uart:Top|UartTx:Transmission|Data[6]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.719      ;
+; -0.048 ; TxData[3]                                   ; Uart:Top|UartTx:Transmission|Data[3]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.721      ;
+; -0.043 ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 1.686      ; 1.725      ;
+; -0.002 ; TxData[7]                                   ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 1.690      ; 1.770      ;
+; -0.002 ; TxData[1]                                   ; Uart:Top|UartTx:Transmission|Data[1]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.767      ;
+; 0.002  ; TxData[4]                                   ; Uart:Top|UartTx:Transmission|Data[4]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.771      ;
+; 0.009  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Clock        ; Clock       ; 0.000        ; 1.686      ; 1.777      ;
+; 0.012  ; TxData[0]                                   ; Uart:Top|UartTx:Transmission|Data[0]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.781      ;
+; 0.049  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 1.686      ; 1.817      ;
+; 0.049  ; TxData[2]                                   ; Uart:Top|UartTx:Transmission|Data[2]        ; Clock        ; Clock       ; 0.000        ; 1.687      ; 1.818      ;
+; 0.093  ; TxInit                                      ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 1.686      ; 1.861      ;
+; 0.179  ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Status.DATA    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Uart:Top|UartRx:Receive|Dcounter[2]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Status.STOP    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Data[7]        ; Uart:Top|UartTx:Transmission|Data[7]        ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Status.START        ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Status.START   ; Uart:Top|UartTx:Transmission|Status.START   ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Uart:Top|UartTx:Transmission|Dcounter[3]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Uart:Top|UartTx:Transmission|Dcounter[2]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179  ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.180  ; TxInit                                      ; TxInit                                      ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.296      ;
+; 0.180  ; Uart:Top|UartRx:Receive|Status.STOP         ; Uart:Top|UartRx:Receive|Status.STOP         ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.296      ;
+; 0.180  ; Uart:Top|UartRx:Receive|Status.WAIT         ; Uart:Top|UartRx:Receive|Status.WAIT         ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.296      ;
+; 0.180  ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|Status.DATA         ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.296      ;
+; 0.183  ; Uart:Top|UartTx:Transmission|Sync           ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.300      ;
+; 0.183  ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.300      ;
+; 0.190  ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Uart:Top|GeneradorBaudios:Baud|ClockBAUD    ; Clock        ; Clock       ; 0.000        ; 0.024      ; 0.296      ;
+; 0.193  ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Uart:Top|UartRx:Receive|Dcounter[1]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.310      ;
+; 0.215  ; Uart:Top|UartRx:Receive|Sync                ; Uart:Top|UartRx:Receive|Dcounter[0]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.332      ;
+; 0.236  ; Counter[47]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.224      ; 0.542      ;
+; 0.260  ; Uart:Top|UartRx:Receive|Status.DATA         ; Uart:Top|UartRx:Receive|RxData[7]           ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.376      ;
+; 0.260  ; Uart:Top|UartRx:Receive|RxData[1]           ; Uart:Top|UartRx:Receive|RxData[0]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.377      ;
+; 0.260  ; Uart:Top|UartTx:Transmission|Status.STOP    ; Uart:Top|UartTx:Transmission|Tx             ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.377      ;
+; 0.268  ; Uart:Top|UartTx:Transmission|Status.DATA    ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.385      ;
+; 0.272  ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|Sync           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.389      ;
+; 0.273  ; Uart:Top|UartTx:Transmission|Status.WAIT    ; Uart:Top|UartTx:Transmission|TxDone         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.390      ;
+; 0.274  ; Counter[49]                                 ; Counter[49]                                 ; Clock        ; Clock       ; 0.000        ; 0.041      ; 0.397      ;
+; 0.275  ; Counter[48]                                 ; Counter[48]                                 ; Clock        ; Clock       ; 0.000        ; 0.041      ; 0.398      ;
+; 0.277  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Dcounter[3]         ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.394      ;
+; 0.279  ; Counter[41]                                 ; Counter[41]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.395      ;
+; 0.280  ; Counter[8]                                  ; Counter[8]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.395      ;
+; 0.280  ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Uart:Top|GeneradorBaudios:Baud|Contador[1]  ; Clock        ; Clock       ; 0.000        ; 0.042      ; 0.404      ;
+; 0.281  ; Uart:Top|UartRx:Receive|Status.START        ; Uart:Top|UartRx:Receive|Sync                ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.398      ;
+; 0.281  ; Uart:Top|UartRx:Receive|RxData[4]           ; Uart:Top|UartRx:Receive|RxData[3]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.398      ;
+; 0.281  ; Uart:Top|UartRx:Receive|RxData[3]           ; Uart:Top|UartRx:Receive|RxData[2]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.398      ;
+; 0.281  ; Counter[6]                                  ; Counter[6]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.396      ;
+; 0.281  ; Counter[5]                                  ; Counter[5]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.396      ;
+; 0.282  ; Uart:Top|UartRx:Receive|RxData[6]           ; Uart:Top|UartRx:Receive|RxData[5]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.399      ;
+; 0.282  ; Uart:Top|UartRx:Receive|RxData[5]           ; Uart:Top|UartRx:Receive|RxData[4]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.399      ;
+; 0.282  ; Uart:Top|UartRx:Receive|RxData[2]           ; Uart:Top|UartRx:Receive|RxData[1]           ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.399      ;
+; 0.282  ; Counter[47]                                 ; Counter[47]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.398      ;
+; 0.282  ; Counter[3]                                  ; Counter[3]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.397      ;
+; 0.282  ; Counter[2]                                  ; Counter[2]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.397      ;
+; 0.283  ; Counter[50]                                 ; Counter[50]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.399      ;
+; 0.284  ; Uart:Top|UartTx:Transmission|Dcounter[0]    ; Uart:Top|UartTx:Transmission|Dcounter[1]    ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.401      ;
+; 0.286  ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Uart:Top|GeneradorBaudios:Baud|Contador[15] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.403      ;
+; 0.286  ; Counter[9]                                  ; Counter[9]                                  ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.402      ;
+; 0.286  ; Counter[7]                                  ; Counter[7]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.401      ;
+; 0.287  ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Uart:Top|GeneradorBaudios:Baud|Contador[5]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.404      ;
+; 0.287  ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Uart:Top|GeneradorBaudios:Baud|Contador[13] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.404      ;
+; 0.287  ; Counter[11]                                 ; Counter[11]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.403      ;
+; 0.287  ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Uart:Top|GeneradorBaudios:Baud|Contador[3]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.404      ;
+; 0.288  ; Counter[24]                                 ; Counter[24]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.404      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Uart:Top|GeneradorBaudios:Baud|Contador[9]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Uart:Top|GeneradorBaudios:Baud|Contador[14] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Uart:Top|GeneradorBaudios:Baud|Contador[6]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Uart:Top|GeneradorBaudios:Baud|Contador[11] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Uart:Top|GeneradorBaudios:Baud|Contador[7]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Counter[10]                                 ; Counter[10]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.404      ;
+; 0.288  ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Uart:Top|GeneradorBaudios:Baud|Contador[2]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.405      ;
+; 0.288  ; Counter[1]                                  ; Counter[1]                                  ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.403      ;
+; 0.289  ; Counter[29]                                 ; Counter[29]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[31]                                 ; Counter[31]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[27]                                 ; Counter[27]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[26]                                 ; Counter[26]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Uart:Top|GeneradorBaudios:Baud|Contador[12] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.406      ;
+; 0.289  ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Uart:Top|GeneradorBaudios:Baud|Contador[10] ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.406      ;
+; 0.289  ; Counter[18]                                 ; Counter[18]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.405      ;
+; 0.289  ; Counter[16]                                 ; Counter[16]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.405      ;
+; 0.289  ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Uart:Top|GeneradorBaudios:Baud|Contador[8]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.406      ;
+; 0.289  ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Uart:Top|GeneradorBaudios:Baud|Contador[4]  ; Clock        ; Clock       ; 0.000        ; 0.035      ; 0.406      ;
+; 0.289  ; Counter[40]                                 ; Counter[40]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[37]                                 ; Counter[37]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[39]                                 ; Counter[39]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.289  ; Counter[33]                                 ; Counter[33]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.404      ;
+; 0.290  ; Counter[30]                                 ; Counter[30]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[32]                                 ; Counter[32]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[28]                                 ; Counter[28]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[36]                                 ; Counter[36]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[38]                                 ; Counter[38]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[35]                                 ; Counter[35]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.290  ; Counter[34]                                 ; Counter[34]                                 ; Clock        ; Clock       ; 0.000        ; 0.033      ; 0.405      ;
+; 0.291  ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Uart:Top|GeneradorBaudios:Baud|Contador[0]  ; Clock        ; Clock       ; 0.000        ; 0.042      ; 0.415      ;
+; 0.293  ; Counter[23]                                 ; Counter[23]                                 ; Clock        ; Clock       ; 0.000        ; 0.034      ; 0.409      ;
++--------+---------------------------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Fast 1200mV -40C Model Metastability Summary ;
+------------------------------------------------
+No synchronizer chains to report.
+
+
++---------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                             ;
++------------------+----------+--------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+--------+----------+---------+---------------------+
+; Worst-case Slack ; -6.377   ; -0.104 ; N/A      ; N/A     ; -3.000              ;
+;  Clock           ; -6.377   ; -0.104 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -366.268 ; -0.322 ; 0.0      ; 0.0     ; -149.49             ;
+;  Clock           ; -366.268 ; -0.322 ; N/A      ; N/A     ; -149.490            ;
++------------------+----------+--------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Tx            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; Reset                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Clock                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Rx                      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Tx            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 6.31e-09 V                   ; 3.14 V              ; -0.145 V            ; 0.247 V                              ; 0.222 V                              ; 4.87e-10 s                  ; 4.27e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 6.31e-09 V                  ; 3.14 V             ; -0.145 V           ; 0.247 V                             ; 0.222 V                             ; 4.87e-10 s                 ; 4.27e-10 s                 ; Yes                       ; No                        ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-09 V                   ; 2.39 V              ; -0.0798 V           ; 0.13 V                               ; 0.103 V                              ; 2.71e-10 s                  ; 2.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-09 V                  ; 2.39 V             ; -0.0798 V          ; 0.13 V                              ; 0.103 V                             ; 2.71e-10 s                 ; 2.5e-10 s                  ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.64e-09 V                   ; 2.39 V              ; -0.00331 V          ; 0.132 V                              ; 0.006 V                              ; 4.59e-10 s                  ; 5.62e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.64e-09 V                  ; 2.39 V             ; -0.00331 V         ; 0.132 V                             ; 0.006 V                             ; 4.59e-10 s                 ; 5.62e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 100c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Tx            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.85e-06 V                   ; 3.11 V              ; -0.0551 V           ; 0.242 V                              ; 0.181 V                              ; 6.97e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.85e-06 V                  ; 3.11 V             ; -0.0551 V          ; 0.242 V                             ; 0.181 V                             ; 6.97e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.77e-07 V                   ; 2.35 V              ; -0.00801 V          ; 0.087 V                              ; 0.01 V                               ; 4.39e-10 s                  ; 3.77e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.77e-07 V                  ; 2.35 V             ; -0.00801 V         ; 0.087 V                             ; 0.01 V                              ; 4.39e-10 s                 ; 3.77e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.28e-06 V                   ; 2.34 V              ; -0.00738 V          ; 0.097 V                              ; 0.024 V                              ; 6.41e-10 s                  ; 8.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.28e-06 V                  ; 2.34 V             ; -0.00738 V         ; 0.097 V                             ; 0.024 V                             ; 6.41e-10 s                 ; 8.13e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Tx            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 2.74e-08 V                   ; 3.6 V               ; -0.154 V            ; 0.269 V                              ; 0.211 V                              ; 4.47e-10 s                  ; 4.04e-10 s                  ; No                         ; No                         ; 3.46 V                      ; 2.74e-08 V                  ; 3.6 V              ; -0.154 V           ; 0.269 V                             ; 0.211 V                             ; 4.47e-10 s                 ; 4.04e-10 s                 ; No                        ; No                        ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.87e-09 V                   ; 2.79 V              ; -0.0524 V           ; 0.19 V                               ; 0.066 V                              ; 2.63e-10 s                  ; 1.96e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.87e-09 V                  ; 2.79 V             ; -0.0524 V          ; 0.19 V                              ; 0.066 V                             ; 2.63e-10 s                 ; 1.96e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.91e-09 V                   ; 2.73 V              ; -0.0159 V           ; 0.231 V                              ; 0.026 V                              ; 2.89e-10 s                  ; 4.54e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.91e-09 V                  ; 2.73 V             ; -0.0159 V          ; 0.231 V                             ; 0.026 V                             ; 2.89e-10 s                 ; 4.54e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clock      ; Clock    ; 22851    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clock      ; Clock    ; 22851    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 67    ; 67   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; Clock  ; Clock ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Rx         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Tx          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Rx         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Tx          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Jul 23 20:05:11 2021
+Info: Command: quartus_sta UartT -c UartT
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'UartT.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Clock Clock
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 100C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -6.377
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.377            -366.268 Clock 
+Info (332146): Worst-case hold slack is 0.026
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.026               0.000 Clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -149.490 Clock 
+Info: Analyzing Slow 1200mV -40C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.292
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.292            -302.917 Clock 
+Info (332146): Worst-case hold slack is -0.030
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.030              -0.030 Clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -149.490 Clock 
+Info: Analyzing Fast 1200mV -40C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.521
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.521            -112.263 Clock 
+Info (332146): Worst-case hold slack is -0.104
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.104              -0.322 Clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -127.324 Clock 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 598 megabytes
+    Info: Processing ended: Fri Jul 23 20:05:12 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

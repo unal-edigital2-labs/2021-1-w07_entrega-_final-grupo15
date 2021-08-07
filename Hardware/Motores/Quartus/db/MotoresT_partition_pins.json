@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PWM1",
+					"strict" : false
+				},
+				{
+					"name" : "PWM2",
+					"strict" : false
+				},
+				{
+					"name" : "MotorA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MotorA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MotorB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MotorB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Movimiento[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Movimiento[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Movimiento[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

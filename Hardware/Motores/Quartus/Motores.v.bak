@@ -1,0 +1,10 @@
+module Motores(
+	input Clock,
+	input Reset,
+	output PWM
+);
+
+
+PWM First(Clock, Reset, 7'd33, PWM=1'b0);
+
+endmodule 

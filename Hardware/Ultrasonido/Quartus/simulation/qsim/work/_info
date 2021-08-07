@@ -1,0 +1,178 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Github/Grupo-5-proyecto/Hardware/Ultrasonido/Quartus/simulation/qsim
+vDivisorFrecuencia
+Z1 !s110 1621882595
+!i10b 1
+!s100 z2Ck;<M=S:XH=iMGbY_`X3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOIW?3;EkUF<Jehg3;T<l@0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1621882595
+Z4 8Ultrasonido.vo
+Z5 FUltrasonido.vo
+!i122 6
+L0 32 381
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1621882595.000000
+Z8 !s107 Ultrasonido.vo|
+Z9 !s90 -work|work|Ultrasonido.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@divisor@frecuencia
+vDivisorFrecuencia_vlg_vec_tst
+R1
+!i10b 1
+!s100 FiV0eLzFh_Cf=]<F_WE]l2
+R2
+I0^XX]dGjG`[TBAUnbKV2O2
+R3
+R0
+w1621882594
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 7
+L0 30 34
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@divisor@frecuencia_vlg_vec_tst
+vhard_block
+Z15 !s110 1622094810
+!i10b 1
+!s100 >bNZ85BMjoOl43>2j:gMJ1
+R2
+IoS<oilJ?gIJBBKMS?M?[e0
+R3
+R0
+Z16 w1622094810
+R4
+R5
+!i122 88
+L0 2366 34
+R6
+r1
+!s85 0
+31
+Z17 !s108 1622094810.000000
+R8
+R9
+!i113 1
+R10
+R11
+vTop
+Z18 !s110 1622094170
+!i10b 1
+!s100 B8hNAl?TC`P7Z@H8P[T:n0
+R2
+I3?QSiVDd0UobLo@P]lJTP2
+R3
+R0
+w1622094170
+R4
+R5
+!i122 84
+Z19 L0 32 2333
+R6
+r1
+!s85 0
+31
+Z20 !s108 1622094170.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@top
+vTop_vlg_vec_tst
+R18
+!i10b 1
+!s100 7;^A?OG=SInSNdVVe4N4>2
+R2
+IzIZZ4IOaKMAZ8YcJPZz@L1
+R3
+R0
+w1622094169
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 85
+Z21 L0 30 58
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+n@top_vlg_vec_tst
+vUltrasonido
+R15
+!i10b 1
+!s100 DzLGalFR]<eEzC_o7O2Za1
+R2
+Ikz26Z2n6H3mN8<HFGLRFQ0
+R3
+R0
+R16
+R4
+R5
+!i122 88
+R19
+R6
+r1
+!s85 0
+31
+R17
+R8
+R9
+!i113 1
+R10
+R11
+n@ultrasonido
+vUltrasonido_vlg_vec_tst
+R15
+!i10b 1
+!s100 :eBCieC08g?]Y<gz[;@el1
+R2
+Io=hTJciR]m@S62GiKkz3G2
+R3
+R0
+w1622094809
+R12
+R13
+!i122 89
+R21
+R6
+r1
+!s85 0
+31
+R17
+Z22 !s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+R11
+n@ultrasonido_vlg_vec_tst

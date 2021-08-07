@@ -1,0 +1,14 @@
+
+State Machine - |Test|Uart:Top|UartRx:Receive|Status
+Name Status.STOP Status.DATA Status.START Status.WAIT 
+Status.WAIT 0 0 0 0 
+Status.START 0 0 1 1 
+Status.DATA 0 1 0 1 
+Status.STOP 1 0 0 1 
+
+State Machine - |Test|Uart:Top|UartTx:Transmission|Status
+Name Status.STOP Status.DATA Status.START Status.WAIT 
+Status.WAIT 0 0 0 0 
+Status.START 0 0 1 1 
+Status.DATA 0 1 0 1 
+Status.STOP 1 0 0 1 

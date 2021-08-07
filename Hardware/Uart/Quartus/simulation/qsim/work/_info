@@ -1,0 +1,130 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Github/Grupo-5-proyecto/Hardware/Uart/Quartus/simulation/qsim
+vGeneradorBaudios
+Z1 !s110 1624978547
+!i10b 1
+!s100 m=O1V3`GWK7V`_aI:=i=70
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IHLiYXZZg8YoB6<bFD<WD61
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1624978546
+Z4 8UartT.vo
+Z5 FUartT.vo
+!i122 20
+L0 32 1156
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1624978547.000000
+Z8 !s107 UartT.vo|
+Z9 !s90 -work|work|UartT.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@generador@baudios
+vGeneradorBaudios_vlg_vec_tst
+R1
+!i10b 1
+!s100 azYGLgPgL;IR`]S=:99f33
+R2
+Idg>0Y>JaT2oTHz1=4T6jZ2
+R3
+R0
+w1624978545
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 21
+L0 30 116
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@generador@baudios_vlg_vec_tst
+vhard_block
+Z15 !s110 1625177707
+!i10b 1
+!s100 E4Z4<d^@oPWJ4eDJI_>5a1
+R2
+I>g@KADHQOL@1=^96=W@0C2
+R3
+R0
+Z16 w1625177706
+R4
+R5
+!i122 204
+L0 3120 34
+R6
+r1
+!s85 0
+31
+Z17 !s108 1625177707.000000
+R8
+R9
+!i113 1
+R10
+R11
+vUart
+R15
+!i10b 1
+!s100 izGLhbg2Jd<3FmRLZMX5?1
+R2
+Im;07Um[YfFZYZhlA@DHMd1
+R3
+R0
+R16
+R4
+R5
+!i122 204
+L0 32 3087
+R6
+r1
+!s85 0
+31
+R17
+R8
+R9
+!i113 1
+R10
+R11
+n@uart
+vUart_vlg_vec_tst
+R15
+!i10b 1
+!s100 6T@S2WCb03bIT5jR<kRLj2
+R2
+ISFSD7iLmBoJcWOD>LCjjz0
+R3
+R0
+R16
+R12
+R13
+!i122 205
+L0 30 57
+R6
+r1
+!s85 0
+31
+R17
+Z18 !s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+R11
+n@uart_vlg_vec_tst

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at UartTx.v(23): always construct contains both blocking and non-blocking assignments File: A:/Github/Grupo-5-proyecto/Hardware/Uart/Quartus/UartTx.v Line: 23
+Info (10281): Verilog HDL Declaration information at UartTx.v(10): object "DATA" differs only in case from object "Data" in the same scope File: A:/Github/Grupo-5-proyecto/Hardware/Uart/Quartus/UartTx.v Line: 10

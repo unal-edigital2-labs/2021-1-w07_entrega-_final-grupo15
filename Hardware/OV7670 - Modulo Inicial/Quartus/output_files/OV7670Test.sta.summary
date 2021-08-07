@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -7.670
+TNS   : -402.487
+
+Type  : Slow 1200mV 100C Model Setup 'Pclock'
+Slack : -6.297
+TNS   : -920.372
+
+Type  : Slow 1200mV 100C Model Setup 'Clock'
+Slack : -0.686
+TNS   : -0.686
+
+Type  : Slow 1200mV 100C Model Hold 'Pclock'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Clock'
+Slack : 0.706
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 1.082
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.210
+TNS   : -160.275
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -433.131
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV -40C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -6.531
+TNS   : -341.738
+
+Type  : Slow 1200mV -40C Model Setup 'Pclock'
+Slack : -5.387
+TNS   : -783.572
+
+Type  : Slow 1200mV -40C Model Setup 'Clock'
+Slack : -0.538
+TNS   : -0.538
+
+Type  : Slow 1200mV -40C Model Hold 'Pclock'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Clock'
+Slack : 0.578
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 0.924
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.210
+TNS   : -157.347
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -424.291
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Fast 1200mV -40C Model Setup 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.050
+TNS   : -148.229
+
+Type  : Fast 1200mV -40C Model Setup 'Pclock'
+Slack : -2.405
+TNS   : -336.397
+
+Type  : Fast 1200mV -40C Model Setup 'Clock'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Fast 1200mV -40C Model Hold 'Pclock'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Clock'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Pclock'
+Slack : -3.000
+TNS   : -241.235
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'DivisorFrecuencia:CLK25|Clock25M'
+Slack : -3.000
+TNS   : -72.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.062
+
+------------------------------------------------------------

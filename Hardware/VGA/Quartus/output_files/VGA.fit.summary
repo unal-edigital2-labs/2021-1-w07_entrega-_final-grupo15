@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jul 20 19:33:28 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : VGA
+Top-level Entity Name : Test
+Family : Cyclone 10 LP
+Device : 10CL025YU256I7G
+Timing Models : Final
+Total logic elements : 143 / 24,624 ( < 1 % )
+    Total combinational functions : 142 / 24,624 ( < 1 % )
+    Dedicated logic registers : 22 / 24,624 ( < 1 % )
+Total registers : 22
+Total pins : 16 / 151 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 393,216 / 608,256 ( 65 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
