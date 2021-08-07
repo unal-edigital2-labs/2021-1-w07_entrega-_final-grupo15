@@ -265,6 +265,7 @@ endmodule
 Finalmente recomendamos que se revise el PDF Ultrasonido, donde se presentan los diagramas gráficos que explican la interacción de las señales y registros, adicionalmente se presenta la máquina de esto de manera gráfica. *Se sugiere que descarguen el archivo ya que por el peso es posible que no sea visualizable en GitHub.*
 
 [LINK PDF ultrasonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/Ultrasonido.pdf)
+[LINK PDF servomotor](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/Servomotor.pdf)
 
 Ver video de prueba de funcionamiento:  
 [Video Ultrasonido](https://drive.google.com/file/d/1GypbvJ5c7eHzlJgD_kZBjsvUvxoFxT_j/view?usp=sharing)
@@ -328,7 +329,9 @@ Y el video de prueba de funcionamiento: [Video Motores](https://drive.google.com
 
 # VGA  (Incluye Cámara)
 
-[Documentación PDF VGA](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA.pdf)
+[Documentación PDF Protocolo VGA](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA.pdf)
+[Documentación PDF VGA - Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA-Camara-Driver.pdf)
+[Documentación PDF OV7670](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/OV7670.pdf)
 
 El VGA es la abreviatura de Matriz de gráficos de vídeo, este nombre es asignado a varias cosas por ejemplo a la resolución de 640 × 480 píxeles y al conector de 15 contactos D subminiatura. Justamente este es el que se usa para el proyecto y el que usado por la Nexys 4DDR, como se muestra a continuación unicamente se usan 5 pines de este conector (RED, GREEN, BLUE, HSYNC, VSYNC). Adicionalmente es importante aclara que se cuenta con un archivo llamado clk24_25_nexys4.v  ya que tanto la Cámara como el VGA operan una frecuencia cuatro veces menor a la frecuencia del clock de la FPGA. 
 
@@ -422,3 +425,5 @@ A continuación se muestra el mapa de memoria para los periféricos Bluetooth y 
 
 ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_dfplayer.png)
 
+
+Para una información detallada de cada periférico incluyendo las interrupciones leer la documentación en los PDFs y su implementación/prueba se encuentran en la rama Desarrollo_XD. Desarrollado en Quartus utilizando Cyclone 10 LP DevKit.
