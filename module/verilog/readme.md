@@ -270,6 +270,15 @@ Finalmente recomendamos que se revise el PDF Ultrasonido, donde se presentan los
 Ver video de prueba de funcionamiento:  
 [Video Ultrasonido](https://drive.google.com/file/d/1GypbvJ5c7eHzlJgD_kZBjsvUvxoFxT_j/view?usp=sharing)
 
+
+# Infrarojo
+Los sensores infrarojos son usados para construir un seguidor de linea. El principal objetivo de este es que el robot sepa cuando hay una intersección para detenerse y analizar la imagen que detecte la cámara en ese momento. Para la construcción de este se dispone de tres sensores que apuntaran a las zonas frontal y laterales del robot. Para su driver se usan 3 GPIO (Entrada/Salida de Propósito General).
+[LINK PDF GPIO](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/GPIO.pdf)
+
+A continuación se observa el mapa de memoria:
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_infra.png)
+
+
 # Motores
 En este modulo se describe el comportamiento de los motores que van a ser la base para la movilidad del robot. Adicional al PWM que ya se ha explicado anteriormente se encuentra un modulo direcciónes y el modulo motor. El mapa de memoria consta de una sola dirección
 
