@@ -393,7 +393,7 @@ Para el anális de forma se realizó un proceso que involucra los mismo registro
 
 El UART es un protocolo serial que permite la interacción entre dos dispositivos, como su nombre lo indica universal asynchronous receiver / transmitter es un protocolo de comunicacion basico en el cual el transmisor y el receptor se deben poner de acuerdo con la velocidad con la que recibiran los datos, ademas de que se cuenta con un canal dedicado para transmision y otro independiente dedicado para la recepcion por lo cual se puede usar en paralalelo (Aunque existe la posibilidad de utilizar un unico canal a traves de Tri-State). Antes de realizar una descripción de los archivos que se encuentran en este modulo se muestra el mapa de memoria.
 
-![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_ultra.png)
+![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_uart_litex.png)
 
 
 En este caso nos va a ayudar a transmitir información entre el procesador y algunos periféricos especificos, el modulo uart esta conformado por los siguientes submodulos. 
