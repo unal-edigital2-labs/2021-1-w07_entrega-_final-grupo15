@@ -272,10 +272,14 @@ Ver video de prueba de funcionamiento:
 
 
 # Infrarojo
+
+
 Los sensores infrarojos son usados para construir un seguidor de linea. El principal objetivo de este es que el robot sepa cuando hay una intersección para detenerse y analizar la imagen que detecte la cámara en ese momento. Para la construcción de este se dispone de tres sensores que apuntaran a las zonas frontal y laterales del robot. Para su driver se usan 3 GPIO (Entrada/Salida de Propósito General).
+
 [LINK PDF GPIO](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/GPIO.pdf)
 
 A continuación se observa el mapa de memoria:
+
 ![Image text](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/module/verilog/figuras/M_infra.png)
 
 
@@ -339,7 +343,9 @@ Y el video de prueba de funcionamiento: [Video Motores](https://drive.google.com
 # VGA  (Incluye Cámara)
 
 [Documentación PDF Protocolo VGA](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA.pdf)
+
 [Documentación PDF VGA - Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/VGA-Camara-Driver.pdf)
+
 [Documentación PDF OV7670](https://github.com/unal-edigital2/w07_entrega-_final-grupo15/blob/main/Documentaci%C3%B3nPDFs/OV7670.pdf)
 
 El VGA es la abreviatura de Matriz de gráficos de vídeo, este nombre es asignado a varias cosas por ejemplo a la resolución de 640 × 480 píxeles y al conector de 15 contactos D subminiatura. Justamente este es el que se usa para el proyecto y el que usado por la Nexys 4DDR, como se muestra a continuación unicamente se usan 5 pines de este conector (RED, GREEN, BLUE, HSYNC, VSYNC). Adicionalmente es importante aclara que se cuenta con un archivo llamado clk24_25_nexys4.v  ya que tanto la Cámara como el VGA operan una frecuencia cuatro veces menor a la frecuencia del clock de la FPGA. 
